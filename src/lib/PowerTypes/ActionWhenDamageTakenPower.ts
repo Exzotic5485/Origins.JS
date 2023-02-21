@@ -8,7 +8,7 @@ export default class ActionWhenDamageTakenPower extends BasePower {
     public hud_render: HudRender = {"should_render": false};
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:action_when_damage_taken";

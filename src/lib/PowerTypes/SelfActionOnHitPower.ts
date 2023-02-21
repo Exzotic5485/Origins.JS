@@ -9,7 +9,7 @@ export default class SelfActionOnHitPower extends BasePower {
     public target_condition?: EntityConditionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:self_action_on_hit";

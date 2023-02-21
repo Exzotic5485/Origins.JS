@@ -10,7 +10,7 @@ export default class ResourcePower extends BasePower {
     public max_action?: EntityActionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:resource";

@@ -6,7 +6,7 @@ export default class ModifyHarvestPower extends BasePower {
     public allow!: boolean;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:modify_harvest";

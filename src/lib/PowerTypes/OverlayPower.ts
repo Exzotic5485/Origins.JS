@@ -13,7 +13,7 @@ export default class OverlayPower extends BasePower {
     public visible_in_third_person: boolean = false;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:overlay";

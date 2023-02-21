@@ -7,7 +7,7 @@ export default class ModifyJumpPower extends BasePower {
     public entity_action?: EntityActionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:modify_jump";

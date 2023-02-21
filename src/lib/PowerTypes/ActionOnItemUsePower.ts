@@ -7,7 +7,7 @@ export default class ActionOnItemUsePower extends BasePower {
     public item_condition?: ItemConditionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:action_on_item_use";

@@ -6,7 +6,7 @@ export default class PreventFeatureRenderPower extends BasePower {
     public features?: FeatureRenderer[];
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:prevent_feature_render";

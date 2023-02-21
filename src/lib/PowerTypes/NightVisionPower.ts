@@ -5,7 +5,7 @@ export default class NightVisionPower extends BasePower {
     public strength: number = 1.0;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:night_vision";

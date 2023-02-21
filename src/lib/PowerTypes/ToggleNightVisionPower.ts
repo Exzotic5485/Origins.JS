@@ -7,7 +7,7 @@ export default class ToggleNightVisionPower extends BasePower {
     public key?: Key;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:toggle_night_vision";

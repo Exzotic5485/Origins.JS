@@ -7,7 +7,7 @@ export default class ModifyFluidRenderPower extends BasePower {
     public fluid!: Identifier;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:modify_fluid_render";

@@ -9,7 +9,7 @@ export default class PhasingPower extends BasePower {
     public phase_down_condition?: EntityConditionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:phasing";

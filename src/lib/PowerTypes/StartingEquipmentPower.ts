@@ -7,7 +7,7 @@ export default class StartingEquipmentPower extends BasePower {
     public recurrent: boolean = false;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:starting_equipment";

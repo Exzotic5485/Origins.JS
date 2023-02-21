@@ -6,7 +6,7 @@ export default class KeepInventoryPower extends BasePower {
     public slots?: number[];
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:keep_inventory";

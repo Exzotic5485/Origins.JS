@@ -9,7 +9,7 @@ export default class ReplaceLootTablePower extends BasePower {
     public priority: number = 0;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:replace_loot_table";

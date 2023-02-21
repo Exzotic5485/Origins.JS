@@ -9,7 +9,7 @@ export default class ModifyPlayerSpawnPower extends BasePower {
     public dimension_distance_multiplier?: number;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:modify_player_spawn";

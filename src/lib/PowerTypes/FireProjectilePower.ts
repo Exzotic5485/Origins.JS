@@ -15,7 +15,7 @@ export default class FireProjectilePower extends BasePower {
     public key?: Key;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:fire_projectile";

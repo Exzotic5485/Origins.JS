@@ -9,7 +9,7 @@ export default class TargetActionOnHitPower extends BasePower {
     public target_condition?: EntityConditionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:target_action_on_hit";

@@ -5,7 +5,7 @@ export default class PreventBlockUsePower extends BasePower {
     public block_condition!: BlockConditionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:prevent_block_use";

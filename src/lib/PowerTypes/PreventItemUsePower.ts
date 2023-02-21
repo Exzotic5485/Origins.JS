@@ -5,7 +5,7 @@ export default class PreventItemUsePower extends BasePower {
     public item_condition?: ItemConditionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:prevent_item_use";

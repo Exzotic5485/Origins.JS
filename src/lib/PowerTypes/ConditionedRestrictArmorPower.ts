@@ -9,7 +9,7 @@ export default class ConditionedRestrictArmorPower extends BasePower {
     public tick_rate: number = 80;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:conditioned_restrict_armor";

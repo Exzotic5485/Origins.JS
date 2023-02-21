@@ -5,7 +5,7 @@ export default class RecipePower extends BasePower {
     public recipe!: CraftingRecipe;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:recipe";

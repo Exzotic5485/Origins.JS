@@ -12,7 +12,7 @@ export default class ModifyDamageDealtPower extends BasePower {
     public modifiers?: ArrayOfAttributeModifiers;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:modify_damage_dealt";

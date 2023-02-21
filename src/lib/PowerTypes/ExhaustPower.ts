@@ -6,7 +6,7 @@ export default class ExhaustPower extends BasePower {
     public exhaustion!: number;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:exhaust";

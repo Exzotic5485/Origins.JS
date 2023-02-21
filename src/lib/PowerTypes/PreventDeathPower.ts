@@ -6,7 +6,7 @@ export default class PreventDeathPower extends BasePower {
     public entity_action?: EntityActionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:prevent_death";

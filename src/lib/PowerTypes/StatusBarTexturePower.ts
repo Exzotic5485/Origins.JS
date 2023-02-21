@@ -5,7 +5,7 @@ export default class StatusBarTexturePower extends BasePower {
     public texture!: Identifier;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:status_bar_texture";

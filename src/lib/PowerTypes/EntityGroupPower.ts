@@ -5,7 +5,7 @@ export default class EntityGroupPower extends BasePower {
     public group!: string;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:entity_group";

@@ -14,7 +14,7 @@ export default class ModifyFoodPower extends BasePower {
     public prevent_effects: boolean = false;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:modify_food";

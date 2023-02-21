@@ -6,7 +6,7 @@ export default class ModifyFallingPower extends BasePower {
     public take_fall_damage: boolean = true;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:modify_falling";

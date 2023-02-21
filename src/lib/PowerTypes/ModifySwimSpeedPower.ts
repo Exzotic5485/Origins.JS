@@ -6,7 +6,7 @@ export default class ModifySwimSpeedPower extends BasePower {
     public modifiers?: ArrayOfAttributeModifiers;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:modify_swim_speed";

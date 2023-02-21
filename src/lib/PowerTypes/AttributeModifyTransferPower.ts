@@ -7,7 +7,7 @@ export default class AttributeModifyTransferPower extends BasePower {
     public multiplier: number = 1.0;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:attribute_modify_transfer";

@@ -6,7 +6,7 @@ export default class ClimbingPower extends BasePower {
     public hold_condition?: EntityConditionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:climbing";

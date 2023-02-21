@@ -7,7 +7,7 @@ export default class ActionOnWakeUpPower extends BasePower {
     public block_condition?: BlockConditionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:action_on_wake_up";

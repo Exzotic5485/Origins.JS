@@ -8,7 +8,7 @@ export default class TooltipPower extends BasePower {
     public priority: number = 0;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:tooltip";

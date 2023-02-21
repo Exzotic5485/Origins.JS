@@ -6,7 +6,7 @@ export default class ShaderPower extends BasePower {
     public toggleable: boolean = true;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:shader";

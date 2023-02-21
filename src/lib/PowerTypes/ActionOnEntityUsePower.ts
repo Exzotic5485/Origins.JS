@@ -13,7 +13,7 @@ export default class ActionOnEntityUsePower extends BasePower {
     public priority: number = 0;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:action_on_entity_use";

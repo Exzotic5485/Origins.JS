@@ -11,7 +11,7 @@ export default class DamageOverTimePower extends BasePower {
     public protection_effectiveness: number = 1.0;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:damage_over_time";

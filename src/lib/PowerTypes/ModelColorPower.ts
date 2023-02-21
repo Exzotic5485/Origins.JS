@@ -8,7 +8,7 @@ export default class ModelColorPower extends BasePower {
     public alpha: number = 1.0;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:model_color";

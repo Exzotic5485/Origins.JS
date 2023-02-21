@@ -11,7 +11,7 @@ export default class ActionOnCallbackPower extends BasePower {
     public entity_action_respawned?: EntityActionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:action_on_callback";

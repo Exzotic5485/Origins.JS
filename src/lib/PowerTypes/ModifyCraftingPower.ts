@@ -11,7 +11,7 @@ export default class ModifyCraftingPower extends BasePower {
     public result?: ItemStack;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:modify_crafting";

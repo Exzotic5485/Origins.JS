@@ -8,7 +8,7 @@ export default class AttackerActionWhenHitPower extends BasePower {
     public hud_render?: HudRender;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:attacker_action_when_hit";

@@ -6,7 +6,7 @@ export default class BurnPower extends BasePower {
     public burn_duration!: number;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:burn";

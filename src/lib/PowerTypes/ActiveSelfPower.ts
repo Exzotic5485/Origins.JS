@@ -8,7 +8,7 @@ export default class ActiveSelfPower extends BasePower {
     public key: Key = {"key": "key.origins.primary_active"};
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:active_self";

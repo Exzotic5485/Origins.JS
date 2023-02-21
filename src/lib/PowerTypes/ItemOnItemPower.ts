@@ -12,7 +12,7 @@ export default class ItemOnItemPower extends BasePower {
     public entity_action?: EntityActionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:item_on_item";

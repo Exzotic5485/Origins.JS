@@ -8,7 +8,7 @@ export default class ActionOnBlockBreakPower extends BasePower {
     public only_when_harvested: boolean = true;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:action_on_block_break";

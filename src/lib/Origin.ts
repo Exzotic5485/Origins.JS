@@ -1,7 +1,5 @@
-import { PowerType } from "./Types";
-
-const AdmZip = require("adm-zip");
-const BasePower = require('./PowerTypes/BasePower')
+import BasePower from "./PowerTypes/BasePower";
+import { Identifier, PowerType } from "./Types";
 
 interface OriginOptions {
     name?: string,
@@ -20,7 +18,7 @@ export default class Origin {
     order?: number;
     unchoosable?: boolean;
 
-    constructor(options: OriginOptions) {
+    constructor(options?: OriginOptions) {
         this.name = options?.name
         this.description = options?.description
         this.icon = options?.icon
@@ -30,7 +28,6 @@ export default class Origin {
     }
 
     addPower(power: PowerType) {
-        if(power instanceof BasePower) throw new Error("Not A Power!")
         this.powers.push(power)
     }
 
@@ -78,5 +75,9 @@ export default class Origin {
 
     getNamespace() {
         return this.name ? this.name!.toLowerCase().replace(/\s+/g, "-") : "namespace";
+    }
+
+    getPowerReferences() {
+        return this.powers.map((p) => p.getReference());
     }
 }

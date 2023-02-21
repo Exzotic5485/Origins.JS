@@ -7,7 +7,7 @@ export default class EffectImmunityPower extends BasePower {
     public inverted: boolean = false;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:effect_immunity";

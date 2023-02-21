@@ -6,7 +6,7 @@ export default class ElytraFlightPower extends BasePower {
     public texture_location?: Identifier;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:elytra_flight";

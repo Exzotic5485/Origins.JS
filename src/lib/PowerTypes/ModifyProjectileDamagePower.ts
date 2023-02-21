@@ -10,7 +10,7 @@ export default class ModifyProjectileDamagePower extends BasePower {
     public target_action?: EntityActionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:modify_projectile_damage";

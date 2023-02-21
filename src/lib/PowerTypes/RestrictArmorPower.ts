@@ -8,7 +8,7 @@ export default class RestrictArmorPower extends BasePower {
     public feet?: ItemConditionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:restrict_armor";

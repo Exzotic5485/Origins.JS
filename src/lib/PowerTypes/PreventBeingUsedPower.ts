@@ -11,7 +11,7 @@ export default class PreventBeingUsedPower extends BasePower {
     public result_stack?: ItemStack;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:prevent_being_used";

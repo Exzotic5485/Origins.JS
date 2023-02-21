@@ -5,7 +5,7 @@ export default class PreventEntityCollisionPower extends BasePower {
     public bientity_condition?: BientityConditionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:prevent_entity_collision";

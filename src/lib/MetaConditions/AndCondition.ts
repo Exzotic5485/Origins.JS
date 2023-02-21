@@ -1,14 +1,14 @@
-export default class AndAction {
+export default class AndCondition {
     public type: string;
-    public actions: any[];
+    public conditions: any[];
 
     constructor() {
         this.type = "origins:and";
-        this.actions = [];
+        this.conditions = [];
     }
 
     add(...params: any[]) {
-        this.actions.push(...params);
+        this.conditions.push(...params);
             
         return this;
     }

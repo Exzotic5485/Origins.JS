@@ -315,3 +315,7 @@ export { default as ToggleNightVisionPower } from './lib/PowerTypes/ToggleNightV
 export { default as TogglePower } from './lib/PowerTypes/TogglePower'
 export { default as TooltipPower } from './lib/PowerTypes/TooltipPower'
 export { default as WalkOnFluidPower } from './lib/PowerTypes/WalkOnFluidPower'
+
+export { default as Datapack } from './lib/Datapack';
+export { default as Origin } from './lib/Origin';
+export * as Types from './lib/Types';

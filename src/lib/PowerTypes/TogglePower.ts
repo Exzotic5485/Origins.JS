@@ -7,7 +7,7 @@ export default class TogglePower extends BasePower {
     public retain_state: boolean = true;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:toggle";

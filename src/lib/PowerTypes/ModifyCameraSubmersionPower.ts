@@ -6,7 +6,7 @@ export default class ModifyCameraSubmersionPower extends BasePower {
     public to!: string;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:modify_camera_submersion";

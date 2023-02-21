@@ -6,7 +6,7 @@ export default class LavaVisionPower extends BasePower {
     public v!: number;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:lava_vision";

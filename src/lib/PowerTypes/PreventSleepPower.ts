@@ -7,7 +7,7 @@ export default class PreventSleepPower extends BasePower {
     public set_spawn_point: boolean = false;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:prevent_sleep";

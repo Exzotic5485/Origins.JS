@@ -10,7 +10,7 @@ export default class EntityGlowPower extends BasePower {
     public blue: number = 1.0;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:entity_glow";

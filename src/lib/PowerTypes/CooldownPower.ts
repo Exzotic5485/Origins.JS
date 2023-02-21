@@ -6,7 +6,7 @@ export default class CooldownPower extends BasePower {
     public hud_render: HudRender = {"should_render": false};
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:cooldown";

@@ -9,7 +9,7 @@ export default class ActionOnHitPower extends BasePower {
     public hud_render: HudRender = {"should_render": false};
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:action_on_hit";

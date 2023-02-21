@@ -10,7 +10,7 @@ export default class StackingStatusEffectPower extends BasePower {
     public effects?: ArrayOfStatusEffectInstances;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:stacking_status_effect";

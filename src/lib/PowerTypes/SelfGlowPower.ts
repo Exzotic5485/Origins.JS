@@ -10,7 +10,7 @@ export default class SelfGlowPower extends BasePower {
     public blue: number = 1.0;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:self_glow";

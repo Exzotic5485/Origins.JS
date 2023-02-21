@@ -7,7 +7,7 @@ export default class ParticlePower extends BasePower {
     public visible_in_first_person: boolean = false;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:particle";

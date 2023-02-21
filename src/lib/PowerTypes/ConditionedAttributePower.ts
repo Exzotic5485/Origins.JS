@@ -8,7 +8,7 @@ export default class ConditionedAttributePower extends BasePower {
     public update_health: boolean = true;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:conditioned_attribute";

@@ -10,7 +10,7 @@ export default class InventoryPower extends BasePower {
     public key: Key = {"key": "key.origins.primary_active"};
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:inventory";

@@ -14,7 +14,7 @@ export default class ModifyGrindstonePower extends BasePower {
     public xp_modifier?: AttributeModifier;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:modify_grindstone";

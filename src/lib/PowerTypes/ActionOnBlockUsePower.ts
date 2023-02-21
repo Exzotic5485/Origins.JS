@@ -14,7 +14,7 @@ export default class ActionOnBlockUsePower extends BasePower {
     public action_result: ActionResult = "success";
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:action_on_block_use";

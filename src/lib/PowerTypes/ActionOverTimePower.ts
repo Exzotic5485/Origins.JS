@@ -8,7 +8,7 @@ export default class ActionOverTimePower extends BasePower {
     public falling_action?: EntityActionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:action_over_time";

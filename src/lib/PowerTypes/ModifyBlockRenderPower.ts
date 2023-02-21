@@ -6,7 +6,7 @@ export default class ModifyBlockRenderPower extends BasePower {
     public block!: Identifier;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:modify_block_render";

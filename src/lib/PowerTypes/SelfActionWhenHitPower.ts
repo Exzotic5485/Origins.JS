@@ -8,7 +8,7 @@ export default class SelfActionWhenHitPower extends BasePower {
     public damage_condition?: DamageConditionType;
 
 
-    constructor(options: PowerOptions) {
+    constructor(options?: PowerOptions) {
         super(options)
 
         this.type = "origins:self_action_when_hit";
