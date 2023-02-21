@@ -8,10 +8,13 @@ type BuildOptions = {
     layer?: Identifier;
 };
 
+let i = 0;
+
 export default class Datapack {
     public static namespace: string;
 
     private origins: Origin[] = [];
+    private mcFunctions: Map<string, string> = new Map();
 
     constructor(namespace: string) {
         Datapack.namespace = namespace;
@@ -19,6 +22,14 @@ export default class Datapack {
 
     addOrigin(...params: Origin[]) {
         this.origins.push(...params);
+
+        return this;
+    }
+
+    importMcFunction(functionContents: string, name?: string) {
+        this.mcFunctions.set(name || `function${i++}`, functionContents)
+
+        return this;
     }
 
     async build(outputFile: string, options?: BuildOptions) {
@@ -53,6 +64,10 @@ export default class Datapack {
         const layerSeperated = originLayerIdentifier.split(`:`);
 
         zip.addFile(`data/${layerSeperated[0]}/origin_layers/${layerSeperated[1]}.json`, Buffer.from(JSON.stringify(originLayer, null, 4)))
+
+        this.mcFunctions.forEach((value, key) => {
+            zip.addFile(`${path}/functions/${key}.mcfunction`, Buffer.from(value))
+        })
 
         const mcmeta = `{
             "pack": {
