@@ -134,3 +134,5 @@ export interface CraftingRecipe {
         count: number;
     }
 }
+
+export type OriginIcon = Identifier | ItemStack;

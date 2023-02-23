@@ -1,10 +1,10 @@
 import BasePower from "./PowerTypes/BasePower";
-import { Identifier, PowerType } from "./Types";
+import { Identifier, OriginIcon, PowerType } from "./Types";
 
 interface OriginOptions {
     name?: string,
     description?: string,
-    icon?: string,
+    icon?: OriginIcon,
     impact?: number
 }
 
@@ -12,7 +12,7 @@ export default class Origin {
 
     name?: string;
     description?: string;
-    icon?: string;
+    icon?: OriginIcon;
     impact?: number;
     powers: PowerType[];
     order?: number;
@@ -49,7 +49,7 @@ export default class Origin {
         return this;
     }
 
-    setIcon(value: string) {
+    setIcon(value: OriginIcon) {
         this.icon = value
 
         return this;

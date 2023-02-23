@@ -58,12 +58,11 @@ export { default as OffsetBlockCondition } from './lib/BlockConditions/OffsetCon
 export { default as ReplacableBlockCondition } from './lib/BlockConditions/ReplacableCondition'
 export { default as SlipperinessBlockCondition } from './lib/BlockConditions/SlipperinessCondition'
 export { default as WaterLoggableBlockCondition } from './lib/BlockConditions/WaterLoggableCondition'
-export { default as AttributeModifierBuilderBuilder } from './lib/Builders/AttributeModifierBuilder'
-export { default as CraftingRecipeBuilderBuilder } from './lib/Builders/CraftingRecipeBuilder'
-export { default as HudRenderBuilderBuilder } from './lib/Builders/HudRenderBuilder'
-export { default as ItemStackBuilderBuilder } from './lib/Builders/ItemStackBuilder'
-export { default as KeyBuilderBuilder } from './lib/Builders/KeyBuilder'
-export { default as PositionedItemStackBuilderBuilder } from './lib/Builders/PositionedItemStackBuilder'
+export { default as CraftingRecipeBuilder } from './lib/Builders/CraftingRecipeBuilder'
+export { default as HudRenderBuilder } from './lib/Builders/HudRenderBuilder'
+export { default as ItemStackBuilder } from './lib/Builders/ItemStackBuilder'
+export { default as KeyBuilder } from './lib/Builders/KeyBuilder'
+export { default as PositionedItemStackBuilder } from './lib/Builders/PositionedItemStackBuilder'
 export { default as AmountDamageCondition } from './lib/DamageConditions/AmountCondition'
 export { default as AttackerDamageCondition } from './lib/DamageConditions/AttackerCondition'
 export { default as BaseDamageDamageCondition } from './lib/DamageConditions/BaseDamageCondition'
@@ -319,3 +318,7 @@ export { default as WalkOnFluidPower } from './lib/PowerTypes/WalkOnFluidPower'
 export { default as Datapack } from './lib/Datapack';
 export { default as Origin } from './lib/Origin';
 export * as Types from './lib/Types';
+
+export { default as StatusEffectBuilder } from './lib/Builders/StatusEffectBuilder';
+export { default as AttributeModifierBuilder } from './lib/Builders/AttributeModifierBuilder'
+export { default as AttributedAttributeModifierBuilder } from './lib/Builders/AttributedAttributeModifierBuilder'
