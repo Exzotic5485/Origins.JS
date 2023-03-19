@@ -40,7 +40,7 @@ export default class BasePower {
     }
 
     getReference() {
-        return `${Datapack.namespace}:${this.getFileName()}`
+        return `${Datapack.namespace}:${this.getFileName()}` as Identifier;
     }
 
     getFileName() {
