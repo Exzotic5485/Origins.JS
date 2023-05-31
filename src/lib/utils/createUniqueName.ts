@@ -7,10 +7,12 @@ export function createUniqueName(originsType: string, powerName?: string) {
         return powerName + (Math.floor(Math.random() * 100) + 1);
     }
 
-
     originsType = originsType.split(":")[1].toLowerCase().replace(/[^a-z0-9]/g, "");
 
-    if(!fileNames.includes(originsType)) return originsType;
+    if(!fileNames.includes(originsType)) {
+        fileNames.push(originsType)
+        return originsType;
+    }
 
-    return originsType + + (Math.floor(Math.random() * 100) + 1);
+    return originsType + (Math.floor(Math.random() * 1000) + 1)
 }

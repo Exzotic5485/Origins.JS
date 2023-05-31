@@ -34,6 +34,9 @@ export type DamageConditionType = BaseDamageCondition;
 export type BiomeConditionType = BaseBiomeCondition;
 export type PowerType = BasePower;
 
+export type ActionType = EntityActionType | BlockActionType | BientityActionType | ItemActionType
+export type ConditionType = EntityConditionType | BlockConditionType | ItemConditionType | BientityConditionType | FluidConditionType | DamageConditionType | BiomeConditionType
+
 export type TextComponent = string | {text: string, color: string} | [string | object]
 export type Vector = {x: number, y: number, z: number}
 

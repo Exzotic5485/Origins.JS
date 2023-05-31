@@ -1,7 +1,7 @@
 import Origin from "./Origin";
 import { Identifier } from "./Types";
 import AdmZip from 'adm-zip';
-import { createUniqueName } from "./utils/UniqueFilename";
+import { createUniqueName } from "./utils/createUniqueName";
 import { existsSync, writeFileSync } from "fs";
 import { mkdir } from "fs/promises";
 
@@ -44,7 +44,7 @@ export default class Datapack {
 
         const originLayer = {
             replace: false,
-            origins: []
+            origins: [] as string[]
         }
 
         for (const origin of this.origins) {
@@ -59,8 +59,11 @@ export default class Datapack {
             }
 
             const originJson = { ...JSON.parse(JSON.stringify(origin)), powers }
+            const originFileName = createUniqueName(Datapack.namespace, origin.name)
 
-            zip.addFile(`${path}/origins/${createUniqueName(Datapack.namespace, origin.name)}.json`, Buffer.from(JSON.stringify(originJson, null, 4)))
+            zip.addFile(`${path}/origins/${originFileName}.json`, Buffer.from(JSON.stringify(originJson, null, 4)))
+
+            originLayer.origins.push(`${Datapack.namespace}:${originFileName}`)
         }
 
         const layerSeperated = originLayerIdentifier.split(`:`);
@@ -92,7 +95,7 @@ export default class Datapack {
 
         const originLayer = {
             replace: false,
-            origins: []
+            origins: [] as string[]
         }
 
         if(!existsSync(outputFolder)) throw new Error('Output directory does not exist!')
@@ -116,8 +119,10 @@ export default class Datapack {
             }
 
             const originJson = { ...JSON.parse(JSON.stringify(origin)), powers }
+            const originFileName = createUniqueName(Datapack.namespace, origin.name)
 
-            writeFileSync(`${path}/origins/${createUniqueName(Datapack.namespace, origin.name)}.json`, JSON.stringify(originJson, null, 4))
+            writeFileSync(`${path}/origins/${originFileName}.json`, JSON.stringify(originJson, null, 4))
+            originLayer.origins.push(`${Datapack.namespace}:${originFileName}`)
         }
 
         writeFileSync(`${outputFolder}/data/${layerSeperated[0]}/origin_layers/${layerSeperated[1]}.json`, JSON.stringify(originLayer, null, 4))
@@ -128,7 +133,8 @@ export default class Datapack {
 
         const mcmeta = `{
             "pack": {
-              "pack_format": ${mcmetaVersion}
+              "pack_format": ${mcmetaVersion},
+              "description": "A minecraft origins datapack written with origins js!"
             }
         }`
 

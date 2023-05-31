@@ -2,7 +2,7 @@ import Datapack from "../Datapack";
 import BaseEntityCondition from "../EntityConditions/BaseEntityCondition";
 import AndCondition from "../MetaConditions/AndCondition";
 import { Identifier, PowerOptions } from "../Types";
-import { createUniqueName } from "../utils/UniqueFilename";
+import { createUniqueName } from "../utils/createUniqueName";
 
 export default class BasePower {
     name?: string;

@@ -1,5 +1,4 @@
-import BasePower from "./PowerTypes/BasePower";
-import { Identifier, OriginIcon, PowerType } from "./Types";
+import { OriginIcon, PowerType } from "./Types";
 
 interface OriginOptions {
     name?: string,

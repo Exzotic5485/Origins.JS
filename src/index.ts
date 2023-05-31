@@ -208,6 +208,7 @@ export { default as NbtItemCondition } from './lib/ItemConditions/NbtCondition'
 export { default as RelativeDurabilityItemCondition } from './lib/ItemConditions/RelativeDurabilityCondition'
 export { default as SmeltableItemCondition } from './lib/ItemConditions/SmeltableCondition'
 export { default as AndMetaAction } from './lib/MetaActions/AndAction'
+export { default as AndMetaCondition} from './lib/MetaConditions/AndCondition'
 export { default as ActionOnBeingUsedPower } from './lib/PowerTypes/ActionOnBeingUsedPower'
 export { default as ActionOnBlockBreakPower } from './lib/PowerTypes/ActionOnBlockBreakPower'
 export { default as ActionOnBlockUsePower } from './lib/PowerTypes/ActionOnBlockUsePower'
@@ -317,7 +318,7 @@ export { default as WalkOnFluidPower } from './lib/PowerTypes/WalkOnFluidPower'
 
 export { default as Datapack } from './lib/Datapack';
 export { default as Origin } from './lib/Origin';
-export * as Types from './lib/Types';
+export * from './lib/Types'
 
 export { default as StatusEffectBuilder } from './lib/Builders/StatusEffectBuilder';
 export { default as AttributeModifierBuilder } from './lib/Builders/AttributeModifierBuilder'
