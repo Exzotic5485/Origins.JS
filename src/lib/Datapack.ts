@@ -49,7 +49,7 @@ export default class Datapack {
         };
 
         for (const origin of this.origins) {
-            const powers: Identifier[] = [];
+            const powers: Identifier[] = [ ...origin.powerReferences ];
 
             for (const power of origin.powers) {
                 const powerFile = JSON.stringify(power, null, 4);
@@ -135,7 +135,7 @@ export default class Datapack {
         await mkdir(minecraftFunctionsPath, { recursive: true }).catch((e) => {});
 
         for (const origin of this.origins) {
-            const powers: Identifier[] = [];
+            const powers: Identifier[] = [ ...origin.powerReferences ];
 
             for (const power of origin.powers) {
                 const powerFile = JSON.stringify(power, null, 4);

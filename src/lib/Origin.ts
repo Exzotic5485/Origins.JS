@@ -1,4 +1,4 @@
-import { OriginIcon, PowerType } from "./Types";
+import { Identifier, OriginIcon, PowerType } from "./Types";
 
 interface OriginOptions {
     name?: string,
@@ -14,6 +14,7 @@ export default class Origin {
     icon?: OriginIcon;
     impact?: number;
     powers: PowerType[];
+    powerReferences: Identifier[];
     order?: number;
     unchoosable?: boolean;
 
@@ -24,10 +25,27 @@ export default class Origin {
         this.impact = options?.impact
 
         this.powers = []
+        this.powerReferences = []
     }
 
     addPower(power: PowerType) {
         this.powers.push(power)
+
+        return this;
+    }
+
+    addPowerReference(power: Identifier) {
+        this.powerReferences.push(power)
+
+        return this;
+    }
+
+    addPowerReferences(powers: Identifier[]) {
+        for (let power of powers){
+            this.addPowerReference(power)
+        }
+
+        return this;
     }
 
     addPowers(powers: PowerType[]) {
