@@ -10,6 +10,7 @@ Other things to note are any methods prefixed with `add` are usually "dynamic" a
 
  - [OriginsJS Documentation](#)
  - [Origins Documentation](https://origins.readthedocs.io/en/latest/)
+ - [NPM Package](https://www.npmjs.com/package/originsjs)
 
 
 ## Usage/Examples
