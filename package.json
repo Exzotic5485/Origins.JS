@@ -1,12 +1,10 @@
 {
   "name": "originsjs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Make origins datapacks with JS / TS!",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "build": "tsc",
-    "test": "ts-node test.ts"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "Exzotic",
