@@ -9,6 +9,8 @@ import BaseEntityCondition from "./EntityConditions/BaseEntityCondition";
 import EmptyFluidCondition from "./FluidConditions/EmptyFluidCondition";
 import BaseItemAction from "./ItemActions/BaseItemAction";
 import BaseItemCondition from "./ItemConditions/BaseItemCondition";
+import BaseMetaAction from "./MetaActions/BaseMetaAction";
+import BaseMetaCondition from "./MetaConditions/BaseMetaCondition";
 import BasePower from "./PowerTypes/BasePower";
 
 export type Comparison = "<" | "<=" | ">" | ">=" | "==" | "!=";
@@ -21,21 +23,24 @@ export type PowerOptions = {
     hidden?: boolean;
 }
 
-export type EntityActionType = BaseEntityAction;
-export type EntityConditionType = BaseEntityCondition;
-export type BlockConditionType = BaseBlockCondition;
-export type BlockActionType = BaseBlockAction;
-export type BientityConditionType  = BaseBientityCondition;
-export type BientityActionType = BaseBientityAction;
-export type ItemActionType = BaseItemAction;
-export type ItemConditionType = BaseItemCondition;
-export type FluidConditionType = EmptyFluidCondition;
-export type DamageConditionType = BaseDamageCondition;
-export type BiomeConditionType = BaseBiomeCondition;
+export type MetaActionType = BaseMetaAction;
+export type MetaConditionType = BaseMetaCondition;
+
+export type EntityActionType = BaseEntityAction | MetaActionType;
+export type EntityConditionType = BaseEntityCondition | MetaConditionType;
+export type BlockConditionType = BaseBlockCondition | MetaConditionType;
+export type BlockActionType = BaseBlockAction | MetaActionType;
+export type BientityConditionType  = BaseBientityCondition | MetaConditionType;
+export type BientityActionType = BaseBientityAction | MetaActionType;
+export type ItemActionType = BaseItemAction | MetaActionType;
+export type ItemConditionType = BaseItemCondition | MetaConditionType;
+export type FluidConditionType = EmptyFluidCondition | MetaConditionType;
+export type DamageConditionType = BaseDamageCondition | MetaConditionType;
+export type BiomeConditionType = BaseBiomeCondition | MetaConditionType;
 export type PowerType = BasePower;
 
 export type ActionType = EntityActionType | BlockActionType | BientityActionType | ItemActionType
-export type ConditionType = EntityConditionType | BlockConditionType | ItemConditionType | BientityConditionType | FluidConditionType | DamageConditionType | BiomeConditionType
+export type ConditionType = EntityConditionType | BlockConditionType | ItemConditionType | BientityConditionType | FluidConditionType | DamageConditionType | BiomeConditionType | MetaConditionType;
 
 export type TextComponent = string | {text: string, color: string} | [string | object]
 export type Vector = {x: number, y: number, z: number}
@@ -139,3 +144,21 @@ export interface CraftingRecipe {
 }
 
 export type OriginIcon = Identifier | ItemStack;
+
+export type Side = "client" | "server"
+
+export interface ChoiceMetActionAction {
+    element: ActionType;
+    weight: number;
+}
+
+export interface IfElseListMetaActionAction { 
+    condition: ConditionType;
+    action: ActionType;
+}
+
+export enum MinecraftFunctionType {
+    Normal,
+    Load,
+    Tick
+}

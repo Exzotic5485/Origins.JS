@@ -1,5 +1,5 @@
 export default class BaseItemCondition {
-    private type: string;
+    public type: string;
     private inverted?: boolean;
 
     constructor() {

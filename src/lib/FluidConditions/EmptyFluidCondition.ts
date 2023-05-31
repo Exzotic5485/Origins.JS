@@ -1,7 +1,7 @@
 import { Identifier } from "../Types";
 
 export default class EmptyFluidCondition {
-    private type: Identifier;
+    public type: Identifier;
     private inverted?: boolean;
 
     constructor() {

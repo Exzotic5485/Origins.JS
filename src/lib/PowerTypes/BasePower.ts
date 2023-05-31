@@ -1,7 +1,6 @@
 import Datapack from "../Datapack";
-import BaseEntityCondition from "../EntityConditions/BaseEntityCondition";
 import AndCondition from "../MetaConditions/AndCondition";
-import { Identifier, PowerOptions } from "../Types";
+import { ConditionType, Identifier, PowerOptions } from "../Types";
 import { createUniqueName } from "../utils/createUniqueName";
 
 export default class BasePower {
@@ -9,7 +8,7 @@ export default class BasePower {
     description?: string;
     hidden?: boolean;
     type: Identifier;
-    condition?: BaseEntityCondition;
+    condition?: ConditionType;
 
     private fileName?: string;
 
@@ -52,7 +51,7 @@ export default class BasePower {
         return newFileName;
     }
 
-    addCondition(condition: BaseEntityCondition) {
+    addCondition(condition: ConditionType) {
         if(!this.condition) {
             this.condition = condition
 
@@ -73,13 +72,9 @@ export default class BasePower {
         return this;
     }
 
-    /*
-    addConditions(conditions) {
-        for (let condition of conditions) {
-            this.addCondition(condition)
-        }
+    setCondition(condition: ConditionType) {
+        this.condition = condition;
 
         return this;
     }
-    */
 }

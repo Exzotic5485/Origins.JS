@@ -1,5 +1,5 @@
 export default class BaseBlockCondition {
-    private type: string;
+    public type: string;
     private inverted?: boolean;
 
     constructor() {

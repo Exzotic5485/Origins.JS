@@ -1,4 +1,4 @@
-export default class BaseBientityAction {
+export default class BaseMetaCondition {
     public type: string;
 
     constructor() {

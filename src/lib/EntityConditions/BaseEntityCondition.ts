@@ -1,5 +1,5 @@
 export default class BaseEntityCondition {
-    private type: string;
+    public type: string;
     private inverted?: boolean;
 
     constructor() {
