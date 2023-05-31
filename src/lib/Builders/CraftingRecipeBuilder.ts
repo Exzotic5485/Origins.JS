@@ -8,7 +8,7 @@ export default class CraftingRecipeBuilder implements CraftingRecipe {
         count: number;
     };
 
-    private constructor() {}
+    public constructor() {}
 
     setType(value: Identifier) {
         this.type = value;

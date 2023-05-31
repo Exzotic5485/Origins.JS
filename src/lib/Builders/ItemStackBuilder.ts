@@ -5,7 +5,7 @@ export default class ItemStackBuilder implements ItemStack {
     amount?: Number;
     tag?: string;
 
-    private constructor() {
+    public constructor() {
 
     }
 
