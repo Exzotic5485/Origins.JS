@@ -2,7 +2,7 @@ import { PowerOptions, CraftingRecipe } from "../Types";
 import BasePower from "./BasePower";
 
 export default class RecipePower extends BasePower {
-    public recipe!: CraftingRecipe;
+    private recipe!: CraftingRecipe;
 
 
     constructor(options?: PowerOptions) {

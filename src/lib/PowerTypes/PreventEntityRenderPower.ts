@@ -2,8 +2,8 @@ import { PowerOptions, EntityConditionType, BientityConditionType } from "../Typ
 import BasePower from "./BasePower";
 
 export default class PreventEntityRenderPower extends BasePower {
-    public entity_condition?: EntityConditionType;
-    public bientity_condition?: BientityConditionType;
+    private entity_condition?: EntityConditionType;
+    private bientity_condition?: BientityConditionType;
 
 
     constructor(options?: PowerOptions) {

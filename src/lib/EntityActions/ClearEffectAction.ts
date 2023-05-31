@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class ClearEffectAction extends BaseEntityAction {
-    public effect?: Identifier;
+    private effect?: Identifier;
 
 
     constructor() {

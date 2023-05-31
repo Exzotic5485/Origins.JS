@@ -2,12 +2,12 @@ import { DestructionType, BlockConditionType } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class ExplodeAction extends BaseEntityAction {
-    public power!: number;
-    public destruction_type: DestructionType = "break";
-    public damage_self: boolean = true;
-    public indestructible?: BlockConditionType;
-    public destructible?: BlockConditionType;
-    public create_fire: boolean = false;
+    private power!: number;
+    private destruction_type: DestructionType = "break";
+    private damage_self: boolean = true;
+    private indestructible?: BlockConditionType;
+    private destructible?: BlockConditionType;
+    private create_fire: boolean = false;
 
 
     constructor() {

@@ -2,9 +2,9 @@ import { ItemStack, ItemActionType } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class GiveAction extends BaseEntityAction {
-    public stack!: ItemStack;
-    public item_action?: ItemActionType;
-    public preferred_slot?: string;
+    private stack!: ItemStack;
+    private item_action?: ItemActionType;
+    private preferred_slot?: string;
 
 
     constructor() {

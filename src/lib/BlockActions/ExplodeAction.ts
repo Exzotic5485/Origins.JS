@@ -2,11 +2,11 @@ import { DestructionType, BlockConditionType } from "../Types";
 import BaseBlockAction from "./BaseBlockAction";
 
 export default class ExplodeAction extends BaseBlockAction {
-    public power!: number;
-    public destruction_type: DestructionType = "break";
-    public indestructible?: BlockConditionType;
-    public destructible?: BlockConditionType;
-    public create_fire: boolean = false;
+    private power!: number;
+    private destruction_type: DestructionType = "break";
+    private indestructible?: BlockConditionType;
+    private destructible?: BlockConditionType;
+    private create_fire: boolean = false;
 
 
     constructor() {

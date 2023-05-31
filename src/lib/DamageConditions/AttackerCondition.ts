@@ -2,7 +2,7 @@ import { EntityConditionType } from "../Types";
 import BaseDamageCondition from "./BaseDamageCondition";
 
 export default class AttackerCondition extends BaseDamageCondition {
-    public entity_condition?: EntityConditionType;
+    private entity_condition?: EntityConditionType;
 
 
     constructor() {

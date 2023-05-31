@@ -2,9 +2,9 @@ import { PowerOptions, PositionedItemStack } from "../Types";
 import BasePower from "./BasePower";
 
 export default class StartingEquipmentPower extends BasePower {
-    public stack?: PositionedItemStack;
-    public stacks?: PositionedItemStack[];
-    public recurrent: boolean = false;
+    private stack?: PositionedItemStack;
+    private stacks?: PositionedItemStack[];
+    private recurrent: boolean = false;
 
 
     constructor(options?: PowerOptions) {

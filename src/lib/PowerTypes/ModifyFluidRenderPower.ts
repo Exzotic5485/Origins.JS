@@ -2,9 +2,9 @@ import { PowerOptions, BlockConditionType, FluidConditionType, Identifier } from
 import BasePower from "./BasePower";
 
 export default class ModifyFluidRenderPower extends BasePower {
-    public block_condition?: BlockConditionType;
-    public fluid_condition?: FluidConditionType;
-    public fluid!: Identifier;
+    private block_condition?: BlockConditionType;
+    private fluid_condition?: FluidConditionType;
+    private fluid!: Identifier;
 
 
     constructor(options?: PowerOptions) {

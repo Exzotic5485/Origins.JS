@@ -2,16 +2,16 @@ import { PowerOptions, ItemConditionType, ItemActionType, ItemStack, AttributeMo
 import BasePower from "./BasePower";
 
 export default class ModifyFoodPower extends BasePower {
-    public item_condition?: ItemConditionType;
-    public item_action?: ItemActionType;
-    public replace_stack?: ItemStack;
-    public food_modifier?: AttributeModifier;
-    public food_modifiers?: ArrayOfAttributeModifiers;
-    public saturation_modifier?: AttributeModifier;
-    public saturation_modifiers?: ArrayOfAttributeModifiers;
-    public entity_action?: EntityActionType;
-    public always_edible: boolean = false;
-    public prevent_effects: boolean = false;
+    private item_condition?: ItemConditionType;
+    private item_action?: ItemActionType;
+    private replace_stack?: ItemStack;
+    private food_modifier?: AttributeModifier;
+    private food_modifiers?: ArrayOfAttributeModifiers;
+    private saturation_modifier?: AttributeModifier;
+    private saturation_modifiers?: ArrayOfAttributeModifiers;
+    private entity_action?: EntityActionType;
+    private always_edible: boolean = false;
+    private prevent_effects: boolean = false;
 
 
     constructor(options?: PowerOptions) {

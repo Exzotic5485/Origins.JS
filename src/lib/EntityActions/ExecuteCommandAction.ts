@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class ExecuteCommandAction extends BaseEntityAction {
-    public command!: string;
+    private command!: string;
 
 
     constructor() {

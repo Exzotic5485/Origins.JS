@@ -2,12 +2,12 @@ import { PowerOptions, StatusEffectInstance, ArrayOfStatusEffectInstances } from
 import BasePower from "./BasePower";
 
 export default class StackingStatusEffectPower extends BasePower {
-    public min_stacks!: number;
-    public max_stacks!: number;
-    public duration_per_stack!: number;
-    public tick_rate: number = 10;
-    public effect?: StatusEffectInstance;
-    public effects?: ArrayOfStatusEffectInstances;
+    private min_stacks!: number;
+    private max_stacks!: number;
+    private duration_per_stack!: number;
+    private tick_rate: number = 10;
+    private effect?: StatusEffectInstance;
+    private effects?: ArrayOfStatusEffectInstances;
 
 
     constructor(options?: PowerOptions) {

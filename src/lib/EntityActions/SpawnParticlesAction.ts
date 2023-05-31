@@ -2,12 +2,12 @@ import { ParticleEffect, Vector } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class SpawnParticlesAction extends BaseEntityAction {
-    public particle!: ParticleEffect;
-    public count!: number;
-    public speed: number = 0.0;
-    public force: boolean = false;
-    public spread: Vector = {"x": 0.5, "y": 0.25, "z": 0.5};
-    public offset_y: number = 0.5;
+    private particle!: ParticleEffect;
+    private count!: number;
+    private speed: number = 0.0;
+    private force: boolean = false;
+    private spread: Vector = {"x": 0.5, "y": 0.25, "z": 0.5};
+    private offset_y: number = 0.5;
 
 
     constructor() {

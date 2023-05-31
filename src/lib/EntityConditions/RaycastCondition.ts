@@ -2,14 +2,14 @@ import { ShapeType, FluidHandling, BientityConditionType, BlockConditionType } f
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class RaycastCondition extends BaseEntityAction {
-    public distance!: number;
-    public block: boolean = true;
-    public entity: boolean = true;
-    public shape_type: ShapeType = "visual";
-    public fluid_handling: FluidHandling = "any";
-    public match_bientity_condition?: BientityConditionType;
-    public hit_bientity_condition?: BientityConditionType;
-    public block_condition?: BlockConditionType;
+    private distance!: number;
+    private block: boolean = true;
+    private entity: boolean = true;
+    private shape_type: ShapeType = "visual";
+    private fluid_handling: FluidHandling = "any";
+    private match_bientity_condition?: BientityConditionType;
+    private hit_bientity_condition?: BientityConditionType;
+    private block_condition?: BlockConditionType;
 
 
     constructor() {

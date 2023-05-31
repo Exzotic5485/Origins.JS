@@ -2,8 +2,8 @@ import {  } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class ElytraFlightPossibleCondition extends BaseEntityAction {
-    public check_state: boolean = false;
-    public check_abilities: boolean = true;
+    private check_state: boolean = false;
+    private check_abilities: boolean = true;
 
 
     constructor() {

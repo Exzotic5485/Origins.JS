@@ -2,10 +2,10 @@ import { PowerOptions, ItemConditionType } from "../Types";
 import BasePower from "./BasePower";
 
 export default class RestrictArmorPower extends BasePower {
-    public head?: ItemConditionType;
-    public chest?: ItemConditionType;
-    public legs?: ItemConditionType;
-    public feet?: ItemConditionType;
+    private head?: ItemConditionType;
+    private chest?: ItemConditionType;
+    private legs?: ItemConditionType;
+    private feet?: ItemConditionType;
 
 
     constructor(options?: PowerOptions) {

@@ -2,9 +2,9 @@ import { PowerOptions, EntityActionType, BlockActionType, BlockConditionType } f
 import BasePower from "./BasePower";
 
 export default class ActionOnWakeUpPower extends BasePower {
-    public entity_action?: EntityActionType;
-    public block_action?: BlockActionType;
-    public block_condition?: BlockConditionType;
+    private entity_action?: EntityActionType;
+    private block_action?: BlockActionType;
+    private block_condition?: BlockConditionType;
 
 
     constructor(options?: PowerOptions) {

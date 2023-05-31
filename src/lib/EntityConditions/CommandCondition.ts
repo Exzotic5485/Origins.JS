@@ -2,9 +2,9 @@ import { Comparison } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class CommandCondition extends BaseEntityAction {
-    public command!: string;
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private command!: string;
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

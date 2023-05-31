@@ -2,15 +2,15 @@ import { PowerOptions, BientityActionType, EntityActionType, BientityConditionTy
 import BasePower from "./BasePower";
 
 export default class ModifyDamageTakenPower extends BasePower {
-    public bientity_action?: BientityActionType;
-    public self_action?: EntityActionType;
-    public attacker_action?: EntityActionType;
-    public bientity_condition?: BientityConditionType;
-    public apply_armor_condition?: EntityConditionType;
-    public damage_armor_condition?: EntityConditionType;
-    public damage_condition?: DamageConditionType;
-    public modifier?: AttributeModifier;
-    public modifiers?: ArrayOfAttributeModifiers;
+    private bientity_action?: BientityActionType;
+    private self_action?: EntityActionType;
+    private attacker_action?: EntityActionType;
+    private bientity_condition?: BientityConditionType;
+    private apply_armor_condition?: EntityConditionType;
+    private damage_armor_condition?: EntityConditionType;
+    private damage_condition?: DamageConditionType;
+    private modifier?: AttributeModifier;
+    private modifiers?: ArrayOfAttributeModifiers;
 
 
     constructor(options?: PowerOptions) {

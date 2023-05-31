@@ -2,9 +2,9 @@ import { PowerOptions, Identifier, AttributeModifier, ArrayOfAttributeModifiers 
 import BasePower from "./BasePower";
 
 export default class ModifyAttributePower extends BasePower {
-    public attribute!: Identifier;
-    public modifier?: AttributeModifier;
-    public modifiers?: ArrayOfAttributeModifiers;
+    private attribute!: Identifier;
+    private modifier?: AttributeModifier;
+    private modifiers?: ArrayOfAttributeModifiers;
 
 
     constructor(options?: PowerOptions) {

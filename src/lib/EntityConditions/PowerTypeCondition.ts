@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class PowerTypeCondition extends BaseEntityAction {
-    public power_type!: Identifier;
+    private power_type!: Identifier;
 
 
     constructor() {

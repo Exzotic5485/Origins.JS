@@ -2,10 +2,10 @@ import { PowerOptions, EntityActionType, HudRender, Key } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ActiveSelfPower extends BasePower {
-    public entity_action!: EntityActionType;
-    public cooldown: number = 1;
-    public hud_render: HudRender = {"should_render": false};
-    public key: Key = {"key": "key.origins.primary_active"};
+    private entity_action!: EntityActionType;
+    private cooldown: number = 1;
+    private hud_render: HudRender = {"should_render": false};
+    private key: Key = {"key": "key.origins.primary_active"};
 
 
     constructor(options?: PowerOptions) {

@@ -2,8 +2,8 @@ import {  } from "../Types";
 import BaseItemAction from "./BaseItemAction";
 
 export default class DamageAction extends BaseItemAction {
-    public amount: number = 1;
-    public ignore_unbreaking: boolean = false;
+    private amount: number = 1;
+    private ignore_unbreaking: boolean = false;
 
 
     constructor() {

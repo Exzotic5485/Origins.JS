@@ -2,8 +2,8 @@ import { Comparison } from "../Types";
 import BaseBlockAction from "./BaseBlockCondition";
 
 export default class HardnessCondition extends BaseBlockAction {
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

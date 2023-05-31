@@ -2,10 +2,10 @@ import { BlockConditionType } from "../Types";
 import BaseBlockAction from "./BaseBlockCondition";
 
 export default class OffsetCondition extends BaseBlockAction {
-    public condition!: BlockConditionType;
-    public x: number = 0;
-    public y: number = 0;
-    public z: number = 0;
+    private condition!: BlockConditionType;
+    private x: number = 0;
+    private y: number = 0;
+    private z: number = 0;
 
 
     constructor() {

@@ -2,11 +2,11 @@ import { PowerOptions, Identifier } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ModifyPlayerSpawnPower extends BasePower {
-    public dimension!: Identifier;
-    public biome?: Identifier;
-    public structure?: Identifier;
-    public spawn_strategy: string = "default";
-    public dimension_distance_multiplier?: number;
+    private dimension!: Identifier;
+    private biome?: Identifier;
+    private structure?: Identifier;
+    private spawn_strategy: string = "default";
+    private dimension_distance_multiplier?: number;
 
 
     constructor(options?: PowerOptions) {

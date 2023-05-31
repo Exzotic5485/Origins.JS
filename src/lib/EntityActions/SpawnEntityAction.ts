@@ -2,9 +2,9 @@ import { Identifier, EntityActionType } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class SpawnEntityAction extends BaseEntityAction {
-    public entity_type!: Identifier;
-    public tag?: string;
-    public entity_action?: EntityActionType;
+    private entity_type!: Identifier;
+    private tag?: string;
+    private entity_action?: EntityActionType;
 
 
     constructor() {

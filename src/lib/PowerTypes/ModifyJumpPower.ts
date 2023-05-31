@@ -2,9 +2,9 @@ import { PowerOptions, AttributeModifier, ArrayOfAttributeModifiers, EntityActio
 import BasePower from "./BasePower";
 
 export default class ModifyJumpPower extends BasePower {
-    public modifier?: AttributeModifier;
-    public modifiers?: ArrayOfAttributeModifiers;
-    public entity_action?: EntityActionType;
+    private modifier?: AttributeModifier;
+    private modifiers?: ArrayOfAttributeModifiers;
+    private entity_action?: EntityActionType;
 
 
     constructor(options?: PowerOptions) {

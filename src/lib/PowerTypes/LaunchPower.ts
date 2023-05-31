@@ -2,11 +2,11 @@ import { PowerOptions, HudRender, Identifier, Key } from "../Types";
 import BasePower from "./BasePower";
 
 export default class LaunchPower extends BasePower {
-    public cooldown: number = 1;
-    public speed!: number;
-    public hud_render?: HudRender;
-    public sound?: Identifier;
-    public key?: Key;
+    private cooldown: number = 1;
+    private speed!: number;
+    private hud_render?: HudRender;
+    private sound?: Identifier;
+    private key?: Key;
 
 
     constructor(options?: PowerOptions) {

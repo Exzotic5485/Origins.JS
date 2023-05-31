@@ -2,9 +2,9 @@ import { PowerOptions, Key } from "../Types";
 import BasePower from "./BasePower";
 
 export default class TogglePower extends BasePower {
-    public active_by_default: boolean = true;
-    public key: Key = {"key": "key.origins.primary_active"};
-    public retain_state: boolean = true;
+    private active_by_default: boolean = true;
+    private key: Key = {"key": "key.origins.primary_active"};
+    private retain_state: boolean = true;
 
 
     constructor(options?: PowerOptions) {

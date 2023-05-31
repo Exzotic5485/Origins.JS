@@ -2,10 +2,10 @@ import { Identifier, Comparison } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class EnchantmentCondition extends BaseEntityAction {
-    public enchantment!: Identifier;
-    public calculation: string = "sum";
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private enchantment!: Identifier;
+    private calculation: string = "sum";
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

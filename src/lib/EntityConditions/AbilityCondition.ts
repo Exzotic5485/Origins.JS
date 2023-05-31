@@ -2,7 +2,7 @@ import { PlayerAbility } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class AbilityCondition extends BaseEntityAction {
-    public ability!: PlayerAbility;
+    private ability!: PlayerAbility;
 
 
     constructor() {

@@ -2,7 +2,7 @@ import { PowerOptions, Identifier } from "../Types";
 import BasePower from "./BasePower";
 
 export default class WalkOnFluidPower extends BasePower {
-    public fluid!: Identifier;
+    private fluid!: Identifier;
 
 
     constructor(options?: PowerOptions) {

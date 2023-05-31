@@ -7,7 +7,7 @@ export default class HudRenderBuilder implements HudRender {
     condition?: EntityConditionType;
     inverted?: boolean;
 
-    public constructor() {
+    private constructor() {
 
     }
 

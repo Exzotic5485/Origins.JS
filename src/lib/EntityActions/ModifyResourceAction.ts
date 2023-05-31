@@ -2,8 +2,8 @@ import { AttributeModifier, Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class ModifyResourceAction extends BaseEntityAction {
-    public modifier!: AttributeModifier;
-    public resource!: Identifier;
+    private modifier!: AttributeModifier;
+    private resource!: Identifier;
 
 
     constructor() {

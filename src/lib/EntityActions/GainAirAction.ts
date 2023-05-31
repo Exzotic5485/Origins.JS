@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class GainAirAction extends BaseEntityAction {
-    public value!: number;
+    private value!: number;
 
 
     constructor() {

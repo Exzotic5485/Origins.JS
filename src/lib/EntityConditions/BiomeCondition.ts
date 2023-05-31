@@ -2,9 +2,9 @@ import { Identifier, ArrayOfIdentifiers, BiomeConditionType } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class BiomeCondition extends BaseEntityAction {
-    public biome?: Identifier;
-    public biomes?: ArrayOfIdentifiers;
-    public condition?: BiomeConditionType;
+    private biome?: Identifier;
+    private biomes?: ArrayOfIdentifiers;
+    private condition?: BiomeConditionType;
 
 
     constructor() {

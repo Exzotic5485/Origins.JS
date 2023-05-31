@@ -2,8 +2,8 @@ import { Comparison } from "../Types";
 import BaseDamageCondition from "./BaseDamageCondition";
 
 export default class AmountCondition extends BaseDamageCondition {
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

@@ -2,8 +2,8 @@ import { Comparison } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class RelativeHealthCondition extends BaseEntityAction {
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

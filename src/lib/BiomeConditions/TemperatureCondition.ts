@@ -2,8 +2,8 @@ import { Comparison } from "../Types";
 import BaseBiomeCondition from "./BaseBiomeCondition";
 
 export default class TemperatureCondition extends BaseBiomeCondition {
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

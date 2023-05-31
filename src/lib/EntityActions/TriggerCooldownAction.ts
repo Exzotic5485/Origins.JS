@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class TriggerCooldownAction extends BaseEntityAction {
-    public power!: Identifier;
+    private power!: Identifier;
 
 
     constructor() {

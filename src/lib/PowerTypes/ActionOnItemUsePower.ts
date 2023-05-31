@@ -2,9 +2,9 @@ import { PowerOptions, EntityActionType, ItemActionType, ItemConditionType } fro
 import BasePower from "./BasePower";
 
 export default class ActionOnItemUsePower extends BasePower {
-    public entity_action?: EntityActionType;
-    public item_action?: ItemActionType;
-    public item_condition?: ItemConditionType;
+    private entity_action?: EntityActionType;
+    private item_action?: ItemActionType;
+    private item_condition?: ItemConditionType;
 
 
     constructor(options?: PowerOptions) {

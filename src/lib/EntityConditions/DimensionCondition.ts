@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class DimensionCondition extends BaseEntityAction {
-    public dimension!: Identifier;
+    private dimension!: Identifier;
 
 
     constructor() {

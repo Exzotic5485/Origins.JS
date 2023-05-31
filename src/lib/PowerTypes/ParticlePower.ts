@@ -2,9 +2,9 @@ import { PowerOptions, ParticleEffect } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ParticlePower extends BasePower {
-    public particle!: ParticleEffect;
-    public frequency!: number;
-    public visible_in_first_person: boolean = false;
+    private particle!: ParticleEffect;
+    private frequency!: number;
+    private visible_in_first_person: boolean = false;
 
 
     constructor(options?: PowerOptions) {

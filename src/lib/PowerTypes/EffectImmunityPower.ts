@@ -2,9 +2,9 @@ import { PowerOptions, Identifier, ArrayOfIdentifiers } from "../Types";
 import BasePower from "./BasePower";
 
 export default class EffectImmunityPower extends BasePower {
-    public effect?: Identifier;
-    public effects?: ArrayOfIdentifiers;
-    public inverted: boolean = false;
+    private effect?: Identifier;
+    private effects?: ArrayOfIdentifiers;
+    private inverted: boolean = false;
 
 
     constructor(options?: PowerOptions) {

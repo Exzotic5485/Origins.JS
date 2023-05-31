@@ -2,8 +2,8 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class GrantPowerAction extends BaseEntityAction {
-    public power!: Identifier;
-    public source!: Identifier;
+    private power!: Identifier;
+    private source!: Identifier;
 
 
     constructor() {

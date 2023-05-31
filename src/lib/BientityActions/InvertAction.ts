@@ -2,7 +2,7 @@ import { BientityActionType } from "../Types";
 import BaseBientityAction from "./BaseBientityAction";
 
 export default class InvertAction extends BaseBientityAction {
-    public action!: BientityActionType;
+    private action!: BientityActionType;
 
 
     constructor() {

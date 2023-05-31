@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class SwingHandAction extends BaseEntityAction {
-    public hand: string = "MAIN_HAND";
+    private hand: string = "MAIN_HAND";
 
 
     constructor() {

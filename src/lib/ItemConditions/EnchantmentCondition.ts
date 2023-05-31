@@ -2,9 +2,9 @@ import { Identifier, Comparison } from "../Types";
 import BaseItemCondition from "./BaseItemCondition";
 
 export default class EnchantmentCondition extends BaseItemCondition {
-    public enchantment!: Identifier;
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private enchantment!: Identifier;
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

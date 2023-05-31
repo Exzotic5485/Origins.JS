@@ -2,9 +2,9 @@ import { PowerOptions, BlockConditionType, AttributeModifier, ArrayOfAttributeMo
 import BasePower from "./BasePower";
 
 export default class ModifyBreakSpeedPower extends BasePower {
-    public block_condition?: BlockConditionType;
-    public modifier?: AttributeModifier;
-    public modifiers?: ArrayOfAttributeModifiers;
+    private block_condition?: BlockConditionType;
+    private modifier?: AttributeModifier;
+    private modifiers?: ArrayOfAttributeModifiers;
 
 
     constructor(options?: PowerOptions) {

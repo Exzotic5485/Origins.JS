@@ -2,9 +2,9 @@ import { PowerOptions, Identifier } from "../Types";
 import BasePower from "./BasePower";
 
 export default class AttributeModifyTransferPower extends BasePower {
-    public class!: Identifier;
-    public attribute!: Identifier;
-    public multiplier: number = 1.0;
+    private class!: Identifier;
+    private attribute!: Identifier;
+    private multiplier: number = 1.0;
 
 
     constructor(options?: PowerOptions) {

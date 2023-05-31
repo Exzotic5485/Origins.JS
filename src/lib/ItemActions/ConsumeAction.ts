@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseItemAction from "./BaseItemAction";
 
 export default class ConsumeAction extends BaseItemAction {
-    public amount: number = 1;
+    private amount: number = 1;
 
 
     constructor() {

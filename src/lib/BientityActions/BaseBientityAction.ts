@@ -1,5 +1,5 @@
 export default class BaseBientityAction {
-    public type: string;
+    private type: string;
 
     constructor() {
         this.type = "";

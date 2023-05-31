@@ -2,10 +2,10 @@ import { EntityActionType, BientityActionType, BientityConditionType } from "../
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class RidingActionAction extends BaseEntityAction {
-    public action?: EntityActionType;
-    public bientity_action?: BientityActionType;
-    public bientity_condition?: BientityConditionType;
-    public recursive: boolean = false;
+    private action?: EntityActionType;
+    private bientity_action?: BientityActionType;
+    private bientity_condition?: BientityConditionType;
+    private recursive: boolean = false;
 
 
     constructor() {

@@ -2,16 +2,16 @@ import { PowerOptions, EntityActionType, BlockActionType, ItemActionType, ItemCo
 import BasePower from "./BasePower";
 
 export default class ModifyGrindstonePower extends BasePower {
-    public result_type: string = "unchanged";
-    public entity_action?: EntityActionType;
-    public block_action?: BlockActionType;
-    public item_action?: ItemActionType;
-    public item_action_after_grinding?: ItemActionType;
-    public top_condition?: ItemConditionType;
-    public bottom_condition?: ItemConditionType;
-    public output_condition?: ItemConditionType;
-    public result_stack?: ItemStack;
-    public xp_modifier?: AttributeModifier;
+    private result_type: string = "unchanged";
+    private entity_action?: EntityActionType;
+    private block_action?: BlockActionType;
+    private item_action?: ItemActionType;
+    private item_action_after_grinding?: ItemActionType;
+    private top_condition?: ItemConditionType;
+    private bottom_condition?: ItemConditionType;
+    private output_condition?: ItemConditionType;
+    private result_stack?: ItemStack;
+    private xp_modifier?: AttributeModifier;
 
 
     constructor(options?: PowerOptions) {

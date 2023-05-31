@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class EntityGroupCondition extends BaseEntityAction {
-    public group!: string;
+    private group!: string;
 
 
     constructor() {

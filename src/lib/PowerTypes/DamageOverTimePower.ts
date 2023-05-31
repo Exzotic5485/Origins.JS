@@ -2,13 +2,13 @@ import { PowerOptions, DamageSource, Identifier } from "../Types";
 import BasePower from "./BasePower";
 
 export default class DamageOverTimePower extends BasePower {
-    public interval: number = 20;
-    public onset_delay?: number;
-    public damage!: number;
-    public damage_easy?: number;
-    public damage_source?: DamageSource;
-    public protection_enchantment?: Identifier;
-    public protection_effectiveness: number = 1.0;
+    private interval: number = 20;
+    private onset_delay?: number;
+    private damage!: number;
+    private damage_easy?: number;
+    private damage_source?: DamageSource;
+    private protection_enchantment?: Identifier;
+    private protection_effectiveness: number = 1.0;
 
 
     constructor(options?: PowerOptions) {

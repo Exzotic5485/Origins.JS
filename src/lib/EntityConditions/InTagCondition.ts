@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class InTagCondition extends BaseEntityAction {
-    public tag!: Identifier;
+    private tag!: Identifier;
 
 
     constructor() {

@@ -2,8 +2,8 @@ import { Comparison } from "../Types";
 import BaseItemCondition from "./BaseItemCondition";
 
 export default class DurabilityCondition extends BaseItemCondition {
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

@@ -2,7 +2,7 @@ import { PowerOptions, BlockConditionType } from "../Types";
 import BasePower from "./BasePower";
 
 export default class PreventBlockUsePower extends BasePower {
-    public block_condition!: BlockConditionType;
+    private block_condition!: BlockConditionType;
 
 
     constructor(options?: PowerOptions) {

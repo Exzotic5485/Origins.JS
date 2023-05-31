@@ -2,11 +2,11 @@ import { PowerOptions, BientityActionType, BientityConditionType, DamageConditio
 import BasePower from "./BasePower";
 
 export default class ActionOnHitPower extends BasePower {
-    public bientity_action!: BientityActionType;
-    public bientity_condition?: BientityConditionType;
-    public damage_condition?: DamageConditionType;
-    public cooldown: number = 1;
-    public hud_render: HudRender = {"should_render": false};
+    private bientity_action!: BientityActionType;
+    private bientity_condition?: BientityConditionType;
+    private damage_condition?: DamageConditionType;
+    private cooldown: number = 1;
+    private hud_render: HudRender = {"should_render": false};
 
 
     constructor(options?: PowerOptions) {

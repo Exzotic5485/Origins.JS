@@ -2,9 +2,9 @@ import { PowerOptions, Key } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ToggleNightVisionPower extends BasePower {
-    public active_by_default: boolean = true;
-    public strength: number = 1.0;
-    public key?: Key;
+    private active_by_default: boolean = true;
+    private strength: number = 1.0;
+    private key?: Key;
 
 
     constructor(options?: PowerOptions) {

@@ -2,13 +2,13 @@ import { PowerOptions, Identifier, ItemActionType, EntityActionType, BlockAction
 import BasePower from "./BasePower";
 
 export default class ModifyCraftingPower extends BasePower {
-    public recipe?: Identifier;
-    public item_action?: ItemActionType;
-    public item_action_after_crafting?: ItemActionType;
-    public entity_action?: EntityActionType;
-    public block_action?: BlockActionType;
-    public item_condition?: ItemConditionType;
-    public result?: ItemStack;
+    private recipe?: Identifier;
+    private item_action?: ItemActionType;
+    private item_action_after_crafting?: ItemActionType;
+    private entity_action?: EntityActionType;
+    private block_action?: BlockActionType;
+    private item_condition?: ItemConditionType;
+    private result?: ItemStack;
 
 
     constructor(options?: PowerOptions) {

@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseBlockAction from "./BaseBlockAction";
 
 export default class ExecuteCommandAction extends BaseBlockAction {
-    public command!: string;
+    private command!: string;
 
 
     constructor() {

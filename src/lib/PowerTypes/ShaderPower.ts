@@ -2,8 +2,8 @@ import { PowerOptions, Identifier } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ShaderPower extends BasePower {
-    public shader!: Identifier;
-    public toggleable: boolean = true;
+    private shader!: Identifier;
+    private toggleable: boolean = true;
 
 
     constructor(options?: PowerOptions) {

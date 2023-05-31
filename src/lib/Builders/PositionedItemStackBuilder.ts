@@ -4,7 +4,7 @@ import ItemStackBuilder from "./ItemStackBuilder";
 export default class PositionedItemStackBuilder extends ItemStackBuilder implements PositionedItemStack {
     slot?: number;
 
-    public constructor() {
+    private constructor() {
         super()
     }
 

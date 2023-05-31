@@ -2,17 +2,17 @@ import { PowerOptions, Identifier, HudRender, Key } from "../Types";
 import BasePower from "./BasePower";
 
 export default class FireProjectilePower extends BasePower {
-    public entity_type!: Identifier;
-    public cooldown: number = 1;
-    public hud_render?: HudRender;
-    public count: number = 1;
-    public interval: number = 0;
-    public start_delay: number = 0;
-    public speed: number = 1.5;
-    public divergence: number = 1.0;
-    public sound?: Identifier;
-    public tag?: string;
-    public key?: Key;
+    private entity_type!: Identifier;
+    private cooldown: number = 1;
+    private hud_render?: HudRender;
+    private count: number = 1;
+    private interval: number = 0;
+    private start_delay: number = 0;
+    private speed: number = 1.5;
+    private divergence: number = 1.0;
+    private sound?: Identifier;
+    private tag?: string;
+    private key?: Key;
 
 
     constructor(options?: PowerOptions) {

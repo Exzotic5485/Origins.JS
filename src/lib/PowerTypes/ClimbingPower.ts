@@ -2,8 +2,8 @@ import { PowerOptions, EntityConditionType } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ClimbingPower extends BasePower {
-    public allow_holding: boolean = true;
-    public hold_condition?: EntityConditionType;
+    private allow_holding: boolean = true;
+    private hold_condition?: EntityConditionType;
 
 
     constructor(options?: PowerOptions) {

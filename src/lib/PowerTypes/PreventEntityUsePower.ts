@@ -2,13 +2,13 @@ import { PowerOptions, BientityActionType, ItemActionType, BientityConditionType
 import BasePower from "./BasePower";
 
 export default class PreventEntityUsePower extends BasePower {
-    public bientity_action?: BientityActionType;
-    public held_item_action?: ItemActionType;
-    public result_item_action?: ItemActionType;
-    public bientity_condition?: BientityConditionType;
-    public item_condition?: ItemConditionType;
-    public hands: string[] = ["off_hand", "main_hand"];
-    public result_stack?: ItemStack;
+    private bientity_action?: BientityActionType;
+    private held_item_action?: ItemActionType;
+    private result_item_action?: ItemActionType;
+    private bientity_condition?: BientityConditionType;
+    private item_condition?: ItemConditionType;
+    private hands: string[] = ["off_hand", "main_hand"];
+    private result_stack?: ItemStack;
 
 
     constructor(options?: PowerOptions) {

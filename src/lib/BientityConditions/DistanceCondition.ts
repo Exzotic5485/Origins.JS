@@ -2,8 +2,8 @@ import { Comparison } from "../Types";
 import BaseBientityCondition from "./BaseBientityCondition";
 
 export default class DistanceCondition extends BaseBientityCondition {
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

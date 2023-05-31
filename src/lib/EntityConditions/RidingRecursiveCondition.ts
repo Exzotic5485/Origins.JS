@@ -2,9 +2,9 @@ import { BientityConditionType, Comparison } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class RidingRecursiveCondition extends BaseEntityAction {
-    public bientity_condition?: BientityConditionType;
-    public comparison: Comparison = ">=";
-    public compare_to: number = 1;
+    private bientity_condition?: BientityConditionType;
+    private comparison: Comparison = ">=";
+    private compare_to: number = 1;
 
 
     constructor() {

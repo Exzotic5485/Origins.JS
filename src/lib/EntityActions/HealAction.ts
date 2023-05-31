@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class HealAction extends BaseEntityAction {
-    public amount!: number;
+    private amount!: number;
 
 
     constructor() {

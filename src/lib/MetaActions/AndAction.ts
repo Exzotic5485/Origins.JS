@@ -1,8 +1,8 @@
 import { ActionType } from "../Types";
 
 export default class AndAction {
-    public type: string;
-    public actions: ActionType[];
+    private type: string;
+    private actions: ActionType[];
 
     constructor() {
         this.type = "origins:and";

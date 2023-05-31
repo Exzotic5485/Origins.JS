@@ -2,7 +2,7 @@ import { PowerOptions, BientityConditionType } from "../Types";
 import BasePower from "./BasePower";
 
 export default class PreventEntityCollisionPower extends BasePower {
-    public bientity_condition?: BientityConditionType;
+    private bientity_condition?: BientityConditionType;
 
 
     constructor(options?: PowerOptions) {

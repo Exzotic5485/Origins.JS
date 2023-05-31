@@ -4,9 +4,9 @@ import BasePower from "./BasePower";
 type Axes = "x" | "y" | "z";
 
 export default class ModifyVelocityPower extends BasePower {
-    public axes: Axes[] = ["x", "y", "z"];
-    public modifier?: AttributeModifier;
-    public modifiers?: ArrayOfAttributeModifiers;
+    private axes: Axes[] = ["x", "y", "z"];
+    private modifier?: AttributeModifier;
+    private modifiers?: ArrayOfAttributeModifiers;
 
     constructor(options?: PowerOptions) {
         super(options);

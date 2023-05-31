@@ -2,7 +2,7 @@ import { EntityConditionType } from "../Types";
 import BaseBientityCondition from "./BaseBientityCondition";
 
 export default class TargetConditionCondition extends BaseBientityCondition {
-    public condition!: EntityConditionType;
+    private condition!: EntityConditionType;
 
 
     constructor() {

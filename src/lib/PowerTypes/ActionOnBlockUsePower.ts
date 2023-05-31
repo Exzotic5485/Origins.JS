@@ -2,16 +2,16 @@ import { PowerOptions, EntityActionType, BlockActionType, BlockConditionType, It
 import BasePower from "./BasePower";
 
 export default class ActionOnBlockUsePower extends BasePower {
-    public entity_action?: EntityActionType;
-    public block_action?: BlockActionType;
-    public block_condition?: BlockConditionType;
-    public item_condition?: ItemConditionType;
-    public directions: string[] = ["north", "east", "south", "west", "up", "down"];
-    public hands: string[] = ["off_hand", "main_hand"];
-    public result_stack?: ItemStack;
-    public held_item_action?: ItemActionType;
-    public result_item_action?: ItemActionType;
-    public action_result: ActionResult = "success";
+    private entity_action?: EntityActionType;
+    private block_action?: BlockActionType;
+    private block_condition?: BlockConditionType;
+    private item_condition?: ItemConditionType;
+    private directions: string[] = ["north", "east", "south", "west", "up", "down"];
+    private hands: string[] = ["off_hand", "main_hand"];
+    private result_stack?: ItemStack;
+    private held_item_action?: ItemActionType;
+    private result_item_action?: ItemActionType;
+    private action_result: ActionResult = "success";
 
 
     constructor(options?: PowerOptions) {

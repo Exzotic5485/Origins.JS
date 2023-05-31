@@ -8,7 +8,7 @@ export default class StatusEffectBuilder implements StatusEffectInstance {
     show_particles?: boolean;
     show_icon?: boolean;
 
-    public constructor(effect?: Identifier) {
+    private constructor(effect?: Identifier) {
         if(effect) this.effect = effect;
     }
 

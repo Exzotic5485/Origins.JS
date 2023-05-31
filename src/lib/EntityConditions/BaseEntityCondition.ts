@@ -1,6 +1,6 @@
 export default class BaseEntityCondition {
-    public type: string;
-    public inverted?: boolean;
+    private type: string;
+    private inverted?: boolean;
 
     constructor() {
         this.type = "";

@@ -2,11 +2,11 @@ import { BlockConditionType, Comparison } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class BlockInRadiusCondition extends BaseEntityAction {
-    public block_condition!: BlockConditionType;
-    public radius!: number;
-    public shape: string = "cube";
-    public comparison: Comparison = ">=";
-    public compare_to: number = 1;
+    private block_condition!: BlockConditionType;
+    private radius!: number;
+    private shape: string = "cube";
+    private comparison: Comparison = ">=";
+    private compare_to: number = 1;
 
 
     constructor() {

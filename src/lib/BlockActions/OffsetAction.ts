@@ -2,10 +2,10 @@ import { BlockActionType } from "../Types";
 import BaseBlockAction from "./BaseBlockAction";
 
 export default class OffsetAction extends BaseBlockAction {
-    public action!: BlockActionType;
-    public x: number = 0;
-    public y: number = 0;
-    public z: number = 0;
+    private action!: BlockActionType;
+    private x: number = 0;
+    private y: number = 0;
+    private z: number = 0;
 
 
     constructor() {

@@ -2,10 +2,10 @@ import { Identifier, ArrayOfIdentifiers } from "../Types";
 import BaseItemAction from "./BaseItemAction";
 
 export default class RemoveEnchantmentAction extends BaseItemAction {
-    public enchantment?: Identifier;
-    public enchantments?: ArrayOfIdentifiers;
-    public levels?: number;
-    public reset_repair_cost: boolean = false;
+    private enchantment?: Identifier;
+    private enchantments?: ArrayOfIdentifiers;
+    private levels?: number;
+    private reset_repair_cost: boolean = false;
 
 
     constructor() {

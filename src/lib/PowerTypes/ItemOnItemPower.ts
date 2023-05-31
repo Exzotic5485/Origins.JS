@@ -2,14 +2,14 @@ import { PowerOptions, ItemConditionType, ItemStack, ItemActionType, EntityActio
 import BasePower from "./BasePower";
 
 export default class ItemOnItemPower extends BasePower {
-    public using_item_condition?: ItemConditionType;
-    public on_item_condition?: ItemConditionType;
-    public result?: ItemStack;
-    public result_from_on_stack: number = 0;
-    public using_item_action?: ItemActionType;
-    public on_item_action?: ItemActionType;
-    public result_item_action?: ItemActionType;
-    public entity_action?: EntityActionType;
+    private using_item_condition?: ItemConditionType;
+    private on_item_condition?: ItemConditionType;
+    private result?: ItemStack;
+    private result_from_on_stack: number = 0;
+    private using_item_action?: ItemActionType;
+    private on_item_action?: ItemActionType;
+    private result_item_action?: ItemActionType;
+    private entity_action?: EntityActionType;
 
 
     constructor(options?: PowerOptions) {

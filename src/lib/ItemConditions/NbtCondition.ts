@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseItemCondition from "./BaseItemCondition";
 
 export default class NbtCondition extends BaseItemCondition {
-    public nbt!: string;
+    private nbt!: string;
 
 
     constructor() {

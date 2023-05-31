@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class EmitGameEventAction extends BaseEntityAction {
-    public event!: Identifier;
+    private event!: Identifier;
 
 
     constructor() {

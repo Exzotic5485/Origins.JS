@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseDamageCondition from "./BaseDamageCondition";
 
 export default class ProjectileCondition extends BaseDamageCondition {
-    public projectile?: Identifier;
+    private projectile?: Identifier;
 
 
     constructor() {

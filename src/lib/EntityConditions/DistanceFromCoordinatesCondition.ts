@@ -2,17 +2,17 @@ import { Vector, Comparison } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class DistanceFromCoordinatesCondition extends BaseEntityAction {
-    public reference: string = "world_origin";
-    public offset?: Vector;
-    public ignore_x: boolean = false;
-    public ignore_y: boolean = false;
-    public ignore_z: boolean = false;
-    public shape: string = "cube";
-    public scale_reference_to_dimension: boolean = true;
-    public result_on_the_wrong_dimension?: boolean;
-    public round_to_digit?: number;
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private reference: string = "world_origin";
+    private offset?: Vector;
+    private ignore_x: boolean = false;
+    private ignore_y: boolean = false;
+    private ignore_z: boolean = false;
+    private shape: string = "cube";
+    private scale_reference_to_dimension: boolean = true;
+    private result_on_the_wrong_dimension?: boolean;
+    private round_to_digit?: number;
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

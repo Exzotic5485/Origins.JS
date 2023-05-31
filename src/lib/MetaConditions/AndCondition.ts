@@ -1,7 +1,7 @@
 export default class AndCondition {
-    public type: string;
-    public conditions: any[];
-    public inverted?: boolean;
+    private type: string;
+    private conditions: any[];
+    private inverted?: boolean;
 
     constructor() {
         this.type = "origins:and";

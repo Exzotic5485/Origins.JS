@@ -2,15 +2,15 @@ import { InventoryType, EntityActionType, ItemActionType, ItemConditionType, Ite
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class DropInventoryAction extends BaseEntityAction {
-    public inventory_type: InventoryType = "inventory";
-    public entity_action?: EntityActionType;
-    public item_action?: ItemActionType;
-    public item_condition?: ItemConditionType;
-    public slot?: ItemSlot;
-    public slots?: ArrayOfItemSlots;
-    public power?: Identifier;
-    public throw_randomly: boolean = false;
-    public retain_ownership: boolean = true;
+    private inventory_type: InventoryType = "inventory";
+    private entity_action?: EntityActionType;
+    private item_action?: ItemActionType;
+    private item_condition?: ItemConditionType;
+    private slot?: ItemSlot;
+    private slots?: ArrayOfItemSlots;
+    private power?: Identifier;
+    private throw_randomly: boolean = false;
+    private retain_ownership: boolean = true;
 
 
     constructor() {

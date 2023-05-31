@@ -2,12 +2,12 @@ import {  } from "../Types";
 import BaseBlockAction from "./BaseBlockAction";
 
 export default class ModifyBlockStateAction extends BaseBlockAction {
-    public property!: string;
-    public operation: string = "add";
-    public change?: number;
-    public value?: boolean;
-    public enum?: string;
-    public cycle: boolean = false;
+    private property!: string;
+    private operation: string = "add";
+    private change?: number;
+    private value?: boolean;
+    private enum?: string;
+    private cycle: boolean = false;
 
 
     constructor() {

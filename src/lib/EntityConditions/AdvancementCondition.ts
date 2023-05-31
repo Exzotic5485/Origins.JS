@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class AdvancementCondition extends BaseEntityAction {
-    public advancement!: Identifier;
+    private advancement!: Identifier;
 
 
     constructor() {

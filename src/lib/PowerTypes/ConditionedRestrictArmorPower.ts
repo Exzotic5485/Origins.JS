@@ -2,11 +2,11 @@ import { PowerOptions, ItemConditionType } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ConditionedRestrictArmorPower extends BasePower {
-    public head?: ItemConditionType;
-    public chest?: ItemConditionType;
-    public legs?: ItemConditionType;
-    public feet?: ItemConditionType;
-    public tick_rate: number = 80;
+    private head?: ItemConditionType;
+    private chest?: ItemConditionType;
+    private legs?: ItemConditionType;
+    private feet?: ItemConditionType;
+    private tick_rate: number = 80;
 
 
     constructor(options?: PowerOptions) {

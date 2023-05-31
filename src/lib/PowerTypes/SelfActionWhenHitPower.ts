@@ -2,10 +2,10 @@ import { PowerOptions, EntityActionType, HudRender, DamageConditionType } from "
 import BasePower from "./BasePower";
 
 export default class SelfActionWhenHitPower extends BasePower {
-    public entity_action!: EntityActionType;
-    public cooldown: number = 1;
-    public hud_render?: HudRender;
-    public damage_condition?: DamageConditionType;
+    private entity_action!: EntityActionType;
+    private cooldown: number = 1;
+    private hud_render?: HudRender;
+    private damage_condition?: DamageConditionType;
 
 
     constructor(options?: PowerOptions) {

@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseBiomeCondition from "./BaseBiomeCondition";
 
 export default class PrecipitationCondition extends BaseBiomeCondition {
-    public precipitation!: string;
+    private precipitation!: string;
 
 
     constructor() {

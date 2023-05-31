@@ -2,7 +2,7 @@ import { BlockActionType } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class BlockActionAtAction extends BaseEntityAction {
-    public block_action!: BlockActionType;
+    private block_action!: BlockActionType;
 
 
     constructor() {

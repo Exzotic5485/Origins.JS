@@ -2,8 +2,8 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class PowerCondition extends BaseEntityAction {
-    public power!: Identifier;
-    public source?: Identifier;
+    private power!: Identifier;
+    private source?: Identifier;
 
 
     constructor() {

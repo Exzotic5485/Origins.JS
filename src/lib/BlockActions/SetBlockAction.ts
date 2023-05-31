@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseBlockAction from "./BaseBlockAction";
 
 export default class SetBlockAction extends BaseBlockAction {
-    public block!: Identifier;
+    private block!: Identifier;
 
 
     constructor() {

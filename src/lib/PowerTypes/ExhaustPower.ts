@@ -2,8 +2,8 @@ import { PowerOptions } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ExhaustPower extends BasePower {
-    public interval: number = 20;
-    public exhaustion!: number;
+    private interval: number = 20;
+    private exhaustion!: number;
 
 
     constructor(options?: PowerOptions) {

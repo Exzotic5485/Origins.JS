@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseDamageCondition from "./BaseDamageCondition";
 
 export default class NameCondition extends BaseDamageCondition {
-    public name!: string;
+    private name!: string;
 
 
     constructor() {

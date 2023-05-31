@@ -2,8 +2,8 @@ import { PowerOptions, HudRender } from "../Types";
 import BasePower from "./BasePower";
 
 export default class CooldownPower extends BasePower {
-    public cooldown!: number;
-    public hud_render: HudRender = {"should_render": false};
+    private cooldown!: number;
+    private hud_render: HudRender = {"should_render": false};
 
 
     constructor(options?: PowerOptions) {

@@ -2,7 +2,7 @@ import { PowerOptions, Identifier } from "../Types";
 import BasePower from "./BasePower";
 
 export default class StatusBarTexturePower extends BasePower {
-    public texture!: Identifier;
+    private texture!: Identifier;
 
 
     constructor(options?: PowerOptions) {

@@ -2,11 +2,11 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class StatusEffectCondition extends BaseEntityAction {
-    public effect!: Identifier;
-    public min_amplifier: number = 0;
-    public max_amplifier: number = 2147483647;
-    public min_duration: number = 0;
-    public max_duration: number = 2147483647;
+    private effect!: Identifier;
+    private min_amplifier: number = 0;
+    private max_amplifier: number = 2147483647;
+    private min_duration: number = 0;
+    private max_duration: number = 2147483647;
 
 
     constructor() {

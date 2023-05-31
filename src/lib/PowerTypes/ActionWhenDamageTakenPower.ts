@@ -2,10 +2,10 @@ import { PowerOptions, EntityActionType, DamageConditionType, HudRender } from "
 import BasePower from "./BasePower";
 
 export default class ActionWhenDamageTakenPower extends BasePower {
-    public entity_action!: EntityActionType;
-    public damage_condition?: DamageConditionType;
-    public cooldown!: number;
-    public hud_render: HudRender = {"should_render": false};
+    private entity_action!: EntityActionType;
+    private damage_condition?: DamageConditionType;
+    private cooldown!: number;
+    private hud_render: HudRender = {"should_render": false};
 
 
     constructor(options?: PowerOptions) {

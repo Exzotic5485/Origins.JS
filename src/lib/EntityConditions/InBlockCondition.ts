@@ -2,7 +2,7 @@ import { BlockConditionType } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class InBlockCondition extends BaseEntityAction {
-    public block_condition!: BlockConditionType;
+    private block_condition!: BlockConditionType;
 
 
     constructor() {

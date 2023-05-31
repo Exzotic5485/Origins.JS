@@ -2,9 +2,9 @@ import { Identifier, Comparison } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class AttributeCondition extends BaseEntityAction {
-    public attribute!: Identifier;
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private attribute!: Identifier;
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

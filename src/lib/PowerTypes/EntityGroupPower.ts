@@ -2,7 +2,7 @@ import { PowerOptions } from "../Types";
 import BasePower from "./BasePower";
 
 export default class EntityGroupPower extends BasePower {
-    public group!: string;
+    private group!: string;
 
 
     constructor(options?: PowerOptions) {

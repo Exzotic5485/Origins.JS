@@ -2,8 +2,8 @@ import {  } from "../Types";
 import BaseBlockAction from "./BaseBlockCondition";
 
 export default class MaterialCondition extends BaseBlockAction {
-    public material?: string;
-    public materials?: string[];
+    private material?: string;
+    private materials?: string[];
 
 
     constructor() {

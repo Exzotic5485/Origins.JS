@@ -2,8 +2,8 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class OriginCondition extends BaseEntityAction {
-    public origin!: Identifier;
-    public layer?: Identifier;
+    private origin!: Identifier;
+    private layer?: Identifier;
 
 
     constructor() {

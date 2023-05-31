@@ -2,11 +2,11 @@ import { StatusEffectInstance, ArrayOfStatusEffectInstances } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class SpawnEffectCloudAction extends BaseEntityAction {
-    public radius: number = 3.0;
-    public radius_on_use: number = -0.5;
-    public wait_time: number = 10;
-    public effect?: StatusEffectInstance;
-    public effects?: ArrayOfStatusEffectInstances;
+    private radius: number = 3.0;
+    private radius_on_use: number = -0.5;
+    private wait_time: number = 10;
+    private effect?: StatusEffectInstance;
+    private effects?: ArrayOfStatusEffectInstances;
 
 
     constructor() {

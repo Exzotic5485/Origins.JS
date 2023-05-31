@@ -2,8 +2,8 @@ import { ShapeType, FluidHandling } from "../Types";
 import BaseBientityCondition from "./BaseBientityCondition";
 
 export default class CanSeeCondition extends BaseBientityCondition {
-    public shape_type: ShapeType = "visual";
-    public fluid_handling: FluidHandling = "none";
+    private shape_type: ShapeType = "visual";
+    private fluid_handling: FluidHandling = "none";
 
 
     constructor() {

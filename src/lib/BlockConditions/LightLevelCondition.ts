@@ -2,9 +2,9 @@ import { Comparison } from "../Types";
 import BaseBlockAction from "./BaseBlockCondition";
 
 export default class LightLevelCondition extends BaseBlockAction {
-    public light_type?: string;
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private light_type?: string;
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

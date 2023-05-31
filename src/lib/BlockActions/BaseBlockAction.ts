@@ -1,5 +1,5 @@
 export default class BaseBlockAction {
-    public type: string;
+    private type: string;
 
     constructor() {
         this.type = "";

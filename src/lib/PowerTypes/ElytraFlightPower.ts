@@ -2,8 +2,8 @@ import { PowerOptions, Identifier } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ElytraFlightPower extends BasePower {
-    public render_elytra!: boolean;
-    public texture_location?: Identifier;
+    private render_elytra!: boolean;
+    private texture_location?: Identifier;
 
 
     constructor(options?: PowerOptions) {

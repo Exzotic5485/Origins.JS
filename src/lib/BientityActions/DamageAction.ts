@@ -2,8 +2,8 @@ import { DamageSource } from "../Types";
 import BaseBientityAction from "./BaseBientityAction";
 
 export default class DamageAction extends BaseBientityAction {
-    public amount!: number;
-    public source!: DamageSource;
+    private amount!: number;
+    private source!: DamageSource;
 
 
     constructor() {

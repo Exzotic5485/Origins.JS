@@ -2,8 +2,8 @@ import { PowerOptions } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ModifyFallingPower extends BasePower {
-    public velocity!: number;
-    public take_fall_damage: boolean = true;
+    private velocity!: number;
+    private take_fall_damage: boolean = true;
 
 
     constructor(options?: PowerOptions) {

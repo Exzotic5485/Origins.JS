@@ -2,8 +2,8 @@ import { PowerOptions, BlockConditionType, Identifier } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ModifyBlockRenderPower extends BasePower {
-    public block_condition?: BlockConditionType;
-    public block!: Identifier;
+    private block_condition?: BlockConditionType;
+    private block!: Identifier;
 
 
     constructor(options?: PowerOptions) {

@@ -2,10 +2,10 @@ import { PowerOptions, Identifier, ArrayOfIdentifiers, AttributeModifier, ArrayO
 import BasePower from "./BasePower";
 
 export default class ModifyStatusEffectDurationPower extends BasePower {
-    public status_effect?: Identifier;
-    public status_effects?: ArrayOfIdentifiers;
-    public modifier?: AttributeModifier;
-    public modifiers?: ArrayOfAttributeModifiers;
+    private status_effect?: Identifier;
+    private status_effects?: ArrayOfIdentifiers;
+    private modifier?: AttributeModifier;
+    private modifiers?: ArrayOfAttributeModifiers;
 
 
     constructor(options?: PowerOptions) {

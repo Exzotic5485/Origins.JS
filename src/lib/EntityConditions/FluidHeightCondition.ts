@@ -2,9 +2,9 @@ import { Identifier, Comparison } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class FluidHeightCondition extends BaseEntityAction {
-    public fluid!: Identifier;
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private fluid!: Identifier;
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

@@ -1,5 +1,5 @@
 export default class BaseEntityAction {
-    public type: string;
+    private type: string;
 
     constructor() {
         this.type = "";

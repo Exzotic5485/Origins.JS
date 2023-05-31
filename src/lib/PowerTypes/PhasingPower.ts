@@ -2,11 +2,11 @@ import { PowerOptions, BlockConditionType, EntityConditionType } from "../Types"
 import BasePower from "./BasePower";
 
 export default class PhasingPower extends BasePower {
-    public blacklist: boolean = false;
-    public block_condition?: BlockConditionType;
-    public render_type: string = "blindness";
-    public view_distance: number = 10.0;
-    public phase_down_condition?: EntityConditionType;
+    private blacklist: boolean = false;
+    private block_condition?: BlockConditionType;
+    private render_type: string = "blindness";
+    private view_distance: number = 10.0;
+    private phase_down_condition?: EntityConditionType;
 
 
     constructor(options?: PowerOptions) {

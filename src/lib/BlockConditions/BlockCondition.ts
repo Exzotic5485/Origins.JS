@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseBlockAction from "./BaseBlockCondition";
 
 export default class BlockCondition extends BaseBlockAction {
-    public block!: Identifier;
+    private block!: Identifier;
 
 
     constructor() {

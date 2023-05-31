@@ -2,10 +2,10 @@ import { PowerOptions, ItemConditionType, TextComponent } from "../Types";
 import BasePower from "./BasePower";
 
 export default class TooltipPower extends BasePower {
-    public item_condition?: ItemConditionType;
-    public text?: TextComponent;
-    public texts?: TextComponent[];
-    public priority: number = 0;
+    private item_condition?: ItemConditionType;
+    private text?: TextComponent;
+    private texts?: TextComponent[];
+    private priority: number = 0;
 
 
     constructor(options?: PowerOptions) {

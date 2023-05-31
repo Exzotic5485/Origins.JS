@@ -2,8 +2,8 @@ import { PowerOptions } from "../Types";
 import BasePower from "./BasePower";
 
 export default class BurnPower extends BasePower {
-    public interval!: number;
-    public burn_duration!: number;
+    private interval!: number;
+    private burn_duration!: number;
 
 
     constructor(options?: PowerOptions) {

@@ -2,22 +2,22 @@ import { ShapeType, FluidHandling, BientityConditionType, BientityActionType, Bl
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class RaycastAction extends BaseEntityAction {
-    public distance!: number;
-    public block: boolean = true;
-    public entity: boolean = true;
-    public shape_type: ShapeType = "visual";
-    public fluid_handling: FluidHandling = "any";
-    public bientity_condition?: BientityConditionType;
-    public bientity_action?: BientityActionType;
-    public block_action?: BlockActionType;
-    public before_action?: EntityActionType;
-    public hit_action?: EntityActionType;
-    public miss_action?: EntityActionType;
-    public command_at_hit?: string;
-    public command_hit_offset?: number;
-    public command_along_ray?: string;
-    public command_step: number = 1.0;
-    public command_along_ray_only_on_hit: boolean = false;
+    private distance!: number;
+    private block: boolean = true;
+    private entity: boolean = true;
+    private shape_type: ShapeType = "visual";
+    private fluid_handling: FluidHandling = "any";
+    private bientity_condition?: BientityConditionType;
+    private bientity_action?: BientityActionType;
+    private block_action?: BlockActionType;
+    private before_action?: EntityActionType;
+    private hit_action?: EntityActionType;
+    private miss_action?: EntityActionType;
+    private command_at_hit?: string;
+    private command_hit_offset?: number;
+    private command_along_ray?: string;
+    private command_step: number = 1.0;
+    private command_along_ray_only_on_hit: boolean = false;
 
 
     constructor() {

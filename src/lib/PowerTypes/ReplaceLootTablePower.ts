@@ -2,11 +2,11 @@ import { PowerOptions, BientityConditionType, BlockConditionType, ItemConditionT
 import BasePower from "./BasePower";
 
 export default class ReplaceLootTablePower extends BasePower {
-    public replace!: Object;
-    public bientity_condition?: BientityConditionType;
-    public block_condition?: BlockConditionType;
-    public item_condition?: ItemConditionType;
-    public priority: number = 0;
+    private replace!: Object;
+    private bientity_condition?: BientityConditionType;
+    private block_condition?: BlockConditionType;
+    private item_condition?: ItemConditionType;
+    private priority: number = 0;
 
 
     constructor(options?: PowerOptions) {

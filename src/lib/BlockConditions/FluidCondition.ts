@@ -2,7 +2,7 @@ import { FluidConditionType } from "../Types";
 import BaseBlockAction from "./BaseBlockCondition";
 
 export default class FluidCondition extends BaseBlockAction {
-    public fluid_condition!: FluidConditionType;
+    private fluid_condition!: FluidConditionType;
 
 
     constructor() {

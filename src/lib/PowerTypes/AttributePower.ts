@@ -2,9 +2,9 @@ import { PowerOptions, AttributedAttributeModifier } from "../Types";
 import BasePower from "./BasePower";
 
 export default class AttributePower extends BasePower {
-    public modifier?: AttributedAttributeModifier;
-    public modifiers?: AttributedAttributeModifier[];
-    public update_health: boolean = true;
+    private modifier?: AttributedAttributeModifier;
+    private modifiers?: AttributedAttributeModifier[];
+    private update_health: boolean = true;
 
 
     constructor(options?: PowerOptions) {

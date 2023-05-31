@@ -2,8 +2,8 @@ import { DamageSource } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class DamageAction extends BaseEntityAction {
-    public amount!: number;
-    public source!: DamageSource;
+    private amount!: number;
+    private source!: DamageSource;
 
     constructor() {
         super();

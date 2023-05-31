@@ -2,8 +2,8 @@ import { ItemActionType } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class EquippedItemActionAction extends BaseEntityAction {
-    public equipment_slot!: string;
-    public action!: ItemActionType;
+    private equipment_slot!: string;
+    private action!: ItemActionType;
 
 
     constructor() {

@@ -2,7 +2,7 @@ import { BientityConditionType } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class RidingRootCondition extends BaseEntityAction {
-    public bientity_condition?: BientityConditionType;
+    private bientity_condition?: BientityConditionType;
 
 
     constructor() {

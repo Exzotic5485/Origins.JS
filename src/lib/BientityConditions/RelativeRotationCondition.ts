@@ -2,11 +2,11 @@ import { Comparison } from "../Types";
 import BaseBientityCondition from "./BaseBientityCondition";
 
 export default class RelativeRotationCondition extends BaseBientityCondition {
-    public axes: string[] = ["x", "y", "z"];
-    public actor_rotation: string = "head";
-    public target_rotation: string = "body";
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private axes: string[] = ["x", "y", "z"];
+    private actor_rotation: string = "head";
+    private target_rotation: string = "body";
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

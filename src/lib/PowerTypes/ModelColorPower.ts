@@ -2,10 +2,10 @@ import { PowerOptions } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ModelColorPower extends BasePower {
-    public red: number = 1.0;
-    public green: number = 1.0;
-    public blue: number = 1.0;
-    public alpha: number = 1.0;
+    private red: number = 1.0;
+    private green: number = 1.0;
+    private blue: number = 1.0;
+    private alpha: number = 1.0;
 
 
     constructor(options?: PowerOptions) {

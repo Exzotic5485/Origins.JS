@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class PredicateCondition extends BaseEntityAction {
-    public predicate!: Identifier;
+    private predicate!: Identifier;
 
 
     constructor() {

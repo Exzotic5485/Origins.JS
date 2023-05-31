@@ -2,7 +2,7 @@ import { BientityConditionType } from "../Types";
 import BaseBientityCondition from "./BaseBientityCondition";
 
 export default class UndirectedCondition extends BaseBientityCondition {
-    public condition!: BientityConditionType;
+    private condition!: BientityConditionType;
 
 
     constructor() {

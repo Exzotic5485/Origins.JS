@@ -2,8 +2,8 @@ import { Identifier, AttributeModifier } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class ModifyStatAction extends BaseEntityAction {
-    public stat!: Identifier;
-    public modifier!: AttributeModifier;
+    private stat!: Identifier;
+    private modifier!: AttributeModifier;
 
 
     constructor() {

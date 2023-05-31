@@ -2,12 +2,12 @@ import { PowerOptions, EntityConditionType, BientityConditionType } from "../Typ
 import BasePower from "./BasePower";
 
 export default class SelfGlowPower extends BasePower {
-    public entity_condition?: EntityConditionType;
-    public bientity_condition?: BientityConditionType;
-    public use_teams: boolean = true;
-    public red: number = 1.0;
-    public green: number = 1.0;
-    public blue: number = 1.0;
+    private entity_condition?: EntityConditionType;
+    private bientity_condition?: BientityConditionType;
+    private use_teams: boolean = true;
+    private red: number = 1.0;
+    private green: number = 1.0;
+    private blue: number = 1.0;
 
 
     constructor(options?: PowerOptions) {

@@ -2,9 +2,9 @@ import { PowerOptions, BlockConditionType } from "../Types";
 import BasePower from "./BasePower";
 
 export default class PreventSleepPower extends BasePower {
-    public block_condition?: BlockConditionType;
-    public message: string = "origins.cant_sleep";
-    public set_spawn_point: boolean = false;
+    private block_condition?: BlockConditionType;
+    private message: string = "origins.cant_sleep";
+    private set_spawn_point: boolean = false;
 
 
     constructor(options?: PowerOptions) {

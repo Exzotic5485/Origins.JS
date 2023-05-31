@@ -2,7 +2,7 @@ import { EntityActionType } from "../Types";
 import BaseBientityAction from "./BaseBientityAction";
 
 export default class ActorActionAction extends BaseBientityAction {
-    public action!: EntityActionType;
+    private action!: EntityActionType;
 
 
     constructor() {

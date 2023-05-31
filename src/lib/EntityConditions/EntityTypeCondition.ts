@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class EntityTypeCondition extends BaseEntityAction {
-    public entity_type!: Identifier;
+    private entity_type!: Identifier;
 
 
     constructor() {

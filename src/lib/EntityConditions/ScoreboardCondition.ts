@@ -2,10 +2,10 @@ import { Comparison } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class ScoreboardCondition extends BaseEntityAction {
-    public name?: string;
-    public objective!: string;
-    public comparison!: Comparison;
-    public compare_to!: number;
+    private name?: string;
+    private objective!: string;
+    private comparison!: Comparison;
+    private compare_to!: number;
 
 
     constructor() {

@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class NbtCondition extends BaseEntityAction {
-    public nbt!: string;
+    private nbt!: string;
 
 
     constructor() {

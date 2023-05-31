@@ -2,8 +2,8 @@ import { ItemConditionType } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class EquippedItemCondition extends BaseEntityAction {
-    public equipment_slot!: string;
-    public item_condition!: ItemConditionType;
+    private equipment_slot!: string;
+    private item_condition!: ItemConditionType;
 
 
     constructor() {

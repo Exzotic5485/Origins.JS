@@ -2,9 +2,9 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class ChangeResourceAction extends BaseEntityAction {
-    public resource!: Identifier;
-    public change!: number;
-    public operation: string = "add";
+    private resource!: Identifier;
+    private change!: number;
+    private operation: string = "add";
 
 
     constructor() {

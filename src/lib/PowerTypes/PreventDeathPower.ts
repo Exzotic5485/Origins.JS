@@ -2,8 +2,8 @@ import { PowerOptions, DamageConditionType, EntityActionType } from "../Types";
 import BasePower from "./BasePower";
 
 export default class PreventDeathPower extends BasePower {
-    public damage_condition?: DamageConditionType;
-    public entity_action?: EntityActionType;
+    private damage_condition?: DamageConditionType;
+    private entity_action?: EntityActionType;
 
 
     constructor(options?: PowerOptions) {

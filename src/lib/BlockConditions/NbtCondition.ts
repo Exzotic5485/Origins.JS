@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseBlockAction from "./BaseBlockCondition";
 
 export default class NbtCondition extends BaseBlockAction {
-    public nbt!: string;
+    private nbt!: string;
 
 
     constructor() {

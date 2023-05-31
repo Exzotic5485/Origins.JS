@@ -2,7 +2,7 @@ import { BiomeCategory } from "../Types";
 import BaseBiomeCondition from "./BaseBiomeCondition";
 
 export default class CategoryCondition extends BaseBiomeCondition {
-    public category!: BiomeCategory;
+    private category!: BiomeCategory;
 
 
     constructor() {

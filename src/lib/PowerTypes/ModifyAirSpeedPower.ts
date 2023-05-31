@@ -2,8 +2,8 @@ import { PowerOptions, AttributeModifier, ArrayOfAttributeModifiers } from "../T
 import BasePower from "./BasePower";
 
 export default class ModifyAirSpeedPower extends BasePower {
-    public modifier?: AttributeModifier;
-    public modifiers?: ArrayOfAttributeModifiers;
+    private modifier?: AttributeModifier;
+    private modifiers?: ArrayOfAttributeModifiers;
 
 
     constructor(options?: PowerOptions) {

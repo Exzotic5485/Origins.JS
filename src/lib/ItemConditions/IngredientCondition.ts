@@ -2,7 +2,7 @@ import { IngredientType } from "../Types";
 import BaseItemCondition from "./BaseItemCondition";
 
 export default class IngredientCondition extends BaseItemCondition {
-    public ingredient!: IngredientType;
+    private ingredient!: IngredientType;
 
 
     constructor() {

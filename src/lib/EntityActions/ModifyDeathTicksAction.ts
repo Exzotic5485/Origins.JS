@@ -2,7 +2,7 @@ import { AttributeModifier } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class ModifyDeathTicksAction extends BaseEntityAction {
-    public modifier!: AttributeModifier;
+    private modifier!: AttributeModifier;
 
 
     constructor() {

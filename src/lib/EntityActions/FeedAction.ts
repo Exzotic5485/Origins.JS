@@ -2,8 +2,8 @@ import {  } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class FeedAction extends BaseEntityAction {
-    public food!: number;
-    public saturation!: number;
+    private food!: number;
+    private saturation!: number;
 
 
     constructor() {

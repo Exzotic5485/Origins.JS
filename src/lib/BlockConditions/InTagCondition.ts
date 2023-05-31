@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseBlockAction from "./BaseBlockCondition";
 
 export default class InTagCondition extends BaseBlockAction {
-    public tag!: Identifier;
+    private tag!: Identifier;
 
 
     constructor() {

@@ -2,10 +2,10 @@ import { PowerOptions, EntityActionType } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ActionOverTimePower extends BasePower {
-    public interval: number = 20;
-    public entity_action?: EntityActionType;
-    public rising_action?: EntityActionType;
-    public falling_action?: EntityActionType;
+    private interval: number = 20;
+    private entity_action?: EntityActionType;
+    private rising_action?: EntityActionType;
+    private falling_action?: EntityActionType;
 
 
     constructor(options?: PowerOptions) {

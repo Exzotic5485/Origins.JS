@@ -2,8 +2,8 @@ import { StatusEffectInstance, ArrayOfStatusEffectInstances } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class ApplyEffectAction extends BaseEntityAction {
-    public effect?: StatusEffectInstance;
-    public effects?: ArrayOfStatusEffectInstances;
+    private effect?: StatusEffectInstance;
+    private effects?: ArrayOfStatusEffectInstances;
 
 
     constructor() {

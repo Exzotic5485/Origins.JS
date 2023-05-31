@@ -2,7 +2,7 @@ import { ItemConditionType } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class UsingItemCondition extends BaseEntityAction {
-    public item_condition?: ItemConditionType;
+    private item_condition?: ItemConditionType;
 
 
     constructor() {

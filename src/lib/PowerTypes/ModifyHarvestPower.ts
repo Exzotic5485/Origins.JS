@@ -2,8 +2,8 @@ import { PowerOptions, BlockConditionType } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ModifyHarvestPower extends BasePower {
-    public block_condition?: BlockConditionType;
-    public allow!: boolean;
+    private block_condition?: BlockConditionType;
+    private allow!: boolean;
 
 
     constructor(options?: PowerOptions) {

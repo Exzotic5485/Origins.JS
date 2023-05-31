@@ -2,8 +2,8 @@ import { PowerOptions, ItemConditionType } from "../Types";
 import BasePower from "./BasePower";
 
 export default class KeepInventoryPower extends BasePower {
-    public item_condition?: ItemConditionType;
-    public slots?: number[];
+    private item_condition?: ItemConditionType;
+    private slots?: number[];
 
 
     constructor(options?: PowerOptions) {

@@ -2,12 +2,12 @@ import {  } from "../Types";
 import BaseBientityAction from "./BaseBientityAction";
 
 export default class AddVelocityAction extends BaseBientityAction {
-    public x: number = 0.0;
-    public y: number = 0.0;
-    public z: number = 0.0;
-    public client: boolean = true;
-    public server: boolean = true;
-    public set: boolean = false;
+    private x: number = 0.0;
+    private y: number = 0.0;
+    private z: number = 0.0;
+    private client: boolean = true;
+    private server: boolean = true;
+    private set: boolean = false;
 
 
     constructor() {

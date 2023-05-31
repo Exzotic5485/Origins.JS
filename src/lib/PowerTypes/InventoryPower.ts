@@ -2,12 +2,12 @@ import { PowerOptions, ContainerType, ItemConditionType, Key } from "../Types";
 import BasePower from "./BasePower";
 
 export default class InventoryPower extends BasePower {
-    public title: string = "container.inventory";
-    public container_type: ContainerType = "dropper";
-    public drop_on_death: boolean = false;
-    public drop_on_death_filter?: ItemConditionType;
-    public recoverable: boolean = true;
-    public key: Key = {"key": "key.origins.primary_active"};
+    private title: string = "container.inventory";
+    private container_type: ContainerType = "dropper";
+    private drop_on_death: boolean = false;
+    private drop_on_death_filter?: ItemConditionType;
+    private recoverable: boolean = true;
+    private key: Key = {"key": "key.origins.primary_active"};
 
 
     constructor(options?: PowerOptions) {

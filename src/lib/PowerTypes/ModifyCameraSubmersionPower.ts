@@ -2,8 +2,8 @@ import { PowerOptions } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ModifyCameraSubmersionPower extends BasePower {
-    public from?: string;
-    public to!: string;
+    private from?: string;
+    private to!: string;
 
 
     constructor(options?: PowerOptions) {

@@ -2,12 +2,12 @@ import { PowerOptions, DamageConditionType, AttributeModifier, ArrayOfAttributeM
 import BasePower from "./BasePower";
 
 export default class ModifyProjectileDamagePower extends BasePower {
-    public damage_condition?: DamageConditionType;
-    public modifier?: AttributeModifier;
-    public modifiers?: ArrayOfAttributeModifiers;
-    public target_condition?: EntityConditionType;
-    public self_action?: EntityActionType;
-    public target_action?: EntityActionType;
+    private damage_condition?: DamageConditionType;
+    private modifier?: AttributeModifier;
+    private modifiers?: ArrayOfAttributeModifiers;
+    private target_condition?: EntityConditionType;
+    private self_action?: EntityActionType;
+    private target_action?: EntityActionType;
 
 
     constructor(options?: PowerOptions) {

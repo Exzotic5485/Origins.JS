@@ -2,10 +2,10 @@ import { PowerOptions, Identifier, ArrayOfIdentifiers, EntityActionType } from "
 import BasePower from "./BasePower";
 
 export default class PreventGameEventPower extends BasePower {
-    public event?: Identifier;
-    public events?: ArrayOfIdentifiers;
-    public tag?: Identifier;
-    public entity_action?: EntityActionType;
+    private event?: Identifier;
+    private events?: ArrayOfIdentifiers;
+    private tag?: Identifier;
+    private entity_action?: EntityActionType;
 
 
     constructor(options?: PowerOptions) {

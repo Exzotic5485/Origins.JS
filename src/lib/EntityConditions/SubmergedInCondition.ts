@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class SubmergedInCondition extends BaseEntityAction {
-    public fluid!: Identifier;
+    private fluid!: Identifier;
 
 
     constructor() {

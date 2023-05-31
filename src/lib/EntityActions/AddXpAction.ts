@@ -2,8 +2,8 @@ import {  } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class AddXpAction extends BaseEntityAction {
-    public points?: number;
-    public levels?: number;
+    private points?: number;
+    private levels?: number;
 
 
     constructor() {

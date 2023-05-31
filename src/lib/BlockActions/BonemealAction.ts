@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseBlockAction from "./BaseBlockAction";
 
 export default class BonemealAction extends BaseBlockAction {
-    public effects: boolean = true;
+    private effects: boolean = true;
 
 
     constructor() {

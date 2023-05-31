@@ -2,7 +2,7 @@ import { PowerOptions, ItemConditionType } from "../Types";
 import BasePower from "./BasePower";
 
 export default class PreventItemUsePower extends BasePower {
-    public item_condition?: ItemConditionType;
+    private item_condition?: ItemConditionType;
 
 
     constructor(options?: PowerOptions) {

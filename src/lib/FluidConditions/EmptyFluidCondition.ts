@@ -1,8 +1,8 @@
 import { Identifier } from "../Types";
 
 export default class EmptyFluidCondition {
-    public type: Identifier;
-    public inverted?: boolean;
+    private type: Identifier;
+    private inverted?: boolean;
 
     constructor() {
         this.type = "origins:empty";

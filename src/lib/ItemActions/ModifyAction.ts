@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseItemAction from "./BaseItemAction";
 
 export default class ModifyAction extends BaseItemAction {
-    public modifier!: Identifier;
+    private modifier!: Identifier;
 
 
     constructor() {

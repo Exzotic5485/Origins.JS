@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class GamemodeCondition extends BaseEntityAction {
-    public gamemode!: string;
+    private gamemode!: string;
 
 
     constructor() {

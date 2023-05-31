@@ -2,9 +2,9 @@ import {  } from "../Types";
 import BaseEntityAction from "./BaseEntityCondition";
 
 export default class BlockCollisionCondition extends BaseEntityAction {
-    public offset_x!: number;
-    public offset_y!: number;
-    public offset_z!: number;
+    private offset_x!: number;
+    private offset_y!: number;
+    private offset_z!: number;
 
 
     constructor() {

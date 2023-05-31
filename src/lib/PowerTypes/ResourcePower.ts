@@ -2,12 +2,12 @@ import { PowerOptions, HudRender, EntityActionType } from "../Types";
 import BasePower from "./BasePower";
 
 export default class ResourcePower extends BasePower {
-    public min!: number;
-    public max!: number;
-    public hud_render?: HudRender;
-    public start_value?: number;
-    public min_action?: EntityActionType;
-    public max_action?: EntityActionType;
+    private min!: number;
+    private max!: number;
+    private hud_render?: HudRender;
+    private start_value?: number;
+    private min_action?: EntityActionType;
+    private max_action?: EntityActionType;
 
 
     constructor(options?: PowerOptions) {

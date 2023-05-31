@@ -1,5 +1,5 @@
 export default class BaseItemAction {
-    public type: string;
+    private type: string;
 
     constructor() {
         this.type = "";

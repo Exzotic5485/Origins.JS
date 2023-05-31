@@ -2,7 +2,7 @@ import { PowerOptions, EntityActionType } from "../Types";
 import BasePower from "./BasePower";
 
 export default class PreventElytraFlightPower extends BasePower {
-    public entity_action?: EntityActionType;
+    private entity_action?: EntityActionType;
 
 
     constructor(options?: PowerOptions) {

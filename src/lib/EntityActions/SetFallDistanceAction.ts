@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class SetFallDistanceAction extends BaseEntityAction {
-    public fall_distance!: number;
+    private fall_distance!: number;
 
 
     constructor() {

@@ -13,7 +13,7 @@ type BuildOptions = {
 let i = 0;
 
 export default class Datapack {
-    public static namespace: string;
+    private static namespace: string;
 
     private origins: Origin[] = [];
     private mcFunctions: Map<string, string> = new Map();

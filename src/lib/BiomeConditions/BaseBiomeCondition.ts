@@ -1,6 +1,6 @@
 export default class BaseBiomeCondition {
-    public type: string;
-    public inverted?: boolean;
+    private type: string;
+    private inverted?: boolean;
 
     constructor() {
         this.type = "";

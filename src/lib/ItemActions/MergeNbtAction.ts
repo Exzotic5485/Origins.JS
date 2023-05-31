@@ -2,7 +2,7 @@ import {  } from "../Types";
 import BaseItemAction from "./BaseItemAction";
 
 export default class MergeNbtAction extends BaseItemAction {
-    public nbt!: string;
+    private nbt!: string;
 
 
     constructor() {

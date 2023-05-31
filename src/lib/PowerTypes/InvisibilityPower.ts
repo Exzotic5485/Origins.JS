@@ -2,7 +2,7 @@ import { PowerOptions } from "../Types";
 import BasePower from "./BasePower";
 
 export default class InvisibilityPower extends BasePower {
-    public render_armor!: boolean;
+    private render_armor!: boolean;
 
 
     constructor(options?: PowerOptions) {

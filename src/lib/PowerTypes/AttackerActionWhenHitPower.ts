@@ -2,10 +2,10 @@ import { PowerOptions, EntityActionType, DamageConditionType, HudRender } from "
 import BasePower from "./BasePower";
 
 export default class AttackerActionWhenHitPower extends BasePower {
-    public entity_action!: EntityActionType;
-    public cooldown: number = 1;
-    public damage_condition?: DamageConditionType;
-    public hud_render?: HudRender;
+    private entity_action!: EntityActionType;
+    private cooldown: number = 1;
+    private damage_condition?: DamageConditionType;
+    private hud_render?: HudRender;
 
 
     constructor(options?: PowerOptions) {

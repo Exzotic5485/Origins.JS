@@ -2,11 +2,11 @@ import { Comparison } from "../Types";
 import BaseBlockAction from "./BaseBlockCondition";
 
 export default class BlockStateCondition extends BaseBlockAction {
-    public property!: string;
-    public comparison?: Comparison;
-    public compare_to?: number;
-    public value?: boolean;
-    public enum?: string;
+    private property!: string;
+    private comparison?: Comparison;
+    private compare_to?: number;
+    private value?: boolean;
+    private enum?: string;
 
 
     constructor() {

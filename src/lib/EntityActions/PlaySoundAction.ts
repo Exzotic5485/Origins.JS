@@ -2,9 +2,9 @@ import { Identifier } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class PlaySoundAction extends BaseEntityAction {
-    public sound!: Identifier;
-    public volume: number = 1.0;
-    public pitch: number = 1.0;
+    private sound!: Identifier;
+    private volume: number = 1.0;
+    private pitch: number = 1.0;
 
 
     constructor() {

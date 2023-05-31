@@ -2,13 +2,13 @@ import {  } from "../Types";
 import BaseEntityAction from "./BaseEntityAction";
 
 export default class AddVelocityAction extends BaseEntityAction {
-    public x: number = 0.0;
-    public y: number = 0.0;
-    public z: number = 0.0;
-    public space: string = "world";
-    public client: boolean = true;
-    public server: boolean = true;
-    public set: boolean = false;
+    private x: number = 0.0;
+    private y: number = 0.0;
+    private z: number = 0.0;
+    private space: string = "world";
+    private client: boolean = true;
+    private server: boolean = true;
+    private set: boolean = false;
 
 
     constructor() {

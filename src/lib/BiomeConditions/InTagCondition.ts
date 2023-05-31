@@ -2,7 +2,7 @@ import { Identifier } from "../Types";
 import BaseBiomeCondition from "./BaseBiomeCondition";
 
 export default class InTagCondition extends BaseBiomeCondition {
-    public tag!: Identifier;
+    private tag!: Identifier;
 
 
     constructor() {
